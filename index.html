@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <link  href="/icons-1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+    
+<div class="bodyGradient"> <!--Body Gradient-->
+ <!--Hero-->
+ <div id="hero">
+   <nav class="nav">
+    <ul class="info"> 
+      <li>INFO</li>
+    </ul>
+<a href="#menu" id="toggle"></a>
+    <div id="menu" class="Menu" >
+      <ul class="menuList">
+          <li>
+            <a href="#teste" onclick="goToPortfolio()">Portfolio
+              <div class="slider"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#teste1" onclick="goToAbout()">ABOUT ME
+              <div class="slider"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onclick="goToWork()">WORK
+              <div class="slider"></div>
+            </a>
+          </li>
+      </ul>
+    </div>
+   </nav>
+    <div id="textPresentation">
+      <h1 id="textHero">
+      </h1>
+      <button class="seeMore" onclick="scrollToPage()"> See More</button>
+    </div>
+    <div id="overlay" onclick="hideSlideShow()"></div>
+
+ </div>  <!--Hero-->
+  <!--Slideshow-->
+  <!--Slide Up   https://codepen.io/vlt5/pen/QwjbYg  
+    https://www.w3schools.com/jsref/event_onscroll.asp -->
+ 
+   <div id="rectangle">
+  <h1 class="rectangleTitle">Portfolio</h1>
+  
+  <div class="division1">
+    <div class="centerDivision1">
+      <div class="picture">
+        <img src="images/CTT.png" alt="" class="imgCTT">
+      </div>
+    </div>
+  </div>
+
+  <div class="division2">
+    <div class="centerDivision2">
+        <div class="title">Title</div>
+        <div class="subTitle">Subtitle</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat. </p>
+        <div class="buttons">
+          <a href="https://www.google.com" class="linkExterno">See More</a>
+          <a href="#popUp" class="popUp" onclick="showSlideShow()">Popup</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slideshow-container fade">
+    <div class="mySlides fade">
+      <img class="imgSlide" src="service-dog-training-101.jpg">
+      <div class="textContainer fade">
+        <div class="title">Title1</div>
+        <div class="subTitle">Subtitle</div>
+        <p class="text">
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit
+        </p> 
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="imgSlide" src="service-dog-training-101.jpg"> 
+      <div class="textContainer fade">
+        <div class="title">Title2</div>
+        <div class="subTitle">Subtitle</div>
+        <p class="text">
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit
+        </p> 
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="imgSlide" src="service-dog-training-101.jpg">
+      <div class="textContainer fade">
+        <div class="title">Title3</div>
+        <div class="subTitle">Subtitle</div>
+          <p class="text">
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit
+          </p> 
+      </div>
+    </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+<!--About-->
+
+<div class="overflow" id="overflow" >
+  <div class="about fade" >
+    
+  <h1 class="aboutTitle" >About</h1>
+  <div class="aboutCenter">
+    <h2 class="aboutSubtitle">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </h2>
+    <div class="aboutText">
+      <p> I started my coding journey a year ago when I decided to take a 6 month course at EDIT. 
+        It was the best decision I ever made and I never looked back. 
+        I've been working in the industry for 6 months and what I love the most is to create and build something new and from scratch. 
+        I'm a self taught and I haven't stopped learning adn will ever stop. What I'm looking right now is to learn even more and be a better self tomorrow that I was yesterday</p>
+      </div>
+      <h2 class="specialSkills">Special Skills</h2> 
+      <div class="iconsGroup">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div> <!--Body Gradient-->
+
+<!--Footer-->
+<div class="footer" id="footer">
+<h1 class="letsWork" > LET'S ADD SOME RANDOM TEXT!</h1>
+  <div class="contacts">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:testeeeee@teste.com"><h1 class="email"> testeeeee@teste.com</h1></a>
+  </div>
+  <div class="contacts">
+    <i class="fas fa-phone-alt"></i>
+    <a href="tel:913 456 789"><h1 class="phone">913 456 789</h1></a>
+  </div>
+  <!--ADICIONAR LINKEDIN-->
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+<!--This was the final project of the Front End Development course I took at EDIT. We had to develop a landing page for a real customer (Volvo) 
+that would have in mind the marketing and advertising campaign. I developed the landing page with a colleague but I also had a role in the marketing 
+strategy because of my degree in Marketing and Advertising.
+
+Falar sobre o propósito da landing page e o seu objectivo.
+Dizer como foi desenvolvida e que linguagens foram usadas.
+Dizer um pouco como funciona??
+--->
+
+
+<!--https://codepen.io/loredonut/pen/hjuai>
