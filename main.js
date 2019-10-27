@@ -40,7 +40,7 @@ theToggle.onclick = function() {
    return false;
 }*/
 
-var str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+var str = "Hello! I'm Renata a front-end developer based in Lisbon, Portugal. Wanna know more? Click below ",
     i = 0,
     isTag,
     text;

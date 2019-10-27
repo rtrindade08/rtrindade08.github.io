@@ -1,21 +1,33 @@
 /* Important styles */
 .bodyGradient{
   background-image: linear-gradient(grey, lavender);
+  
 }
-
-/*---HERO---*/
-#hero{
-  height: 100%;
+nav{
+  overflow: hidden;
   position: relative;
 }
-  #Menu{
+#Menu{
   position: relative;
   text-align: center;
 }
-
-nav{
+/*---HERO---*/
+#hero{
   position: relative;
+  height: 100vh;
 }
+#textPresentation{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  animation: opacity 4s ease-in;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+
+
 
 .info{
   float: left;
@@ -48,15 +60,7 @@ nav{
   border: 1px solid black;
 }
 
-#textPresentation{
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  animation: opacity 4s ease-in;
-  top: 50%;
-  transform: translateY(-50%);
-  position: absolute;
-}
+
 @keyframes opacity {
   0% {
     transform: opacity(0);
@@ -70,13 +74,13 @@ nav{
   }
 }
 @font-face {
-    font-family: 'SourceSansPro', sans-serif;
-    src: url(SourceSansPro-Light.ttf);
+    font-family: 'LightFont';
+    src: url(/Fonts/SourceSansPro-Light.ttf);
   }
 #textHero{
   margin: 30px 30px;
   font-size:60px;
-  font-family: 'SourceSansPro', sans-serif;
+  font-family: 'LightFont';
 }
 
 .seeMore{
@@ -183,7 +187,7 @@ nav{
 
 /*--RECTANGLE--*/
 #rectangle{
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 .rectangleTitle{
@@ -545,6 +549,9 @@ nav{
   .footer{
     background-color: darkgrey;
     height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .letsWork{
     margin: 0;
