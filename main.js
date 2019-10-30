@@ -40,7 +40,7 @@ theToggle.onclick = function() {
    return false;
 }*/
 
-var str = "Hello! I'm Renata a front-end developer based in Lisbon, Portugal. Wanna know more? Click below ",
+var str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab",
     i = 0,
     isTag,
     text;
@@ -73,6 +73,9 @@ theToggle.onclick = function (){
         
     }else{
         document.body.style.overflow = '';
+        [ 'toggle', 'menu'].forEach(function( id ) {
+            document.getElementById( id ).style.transition= 'all .5s';
+        });
     }
     
 }
@@ -144,31 +147,51 @@ rh = Rect.height;
 
   document.addEventListener("scroll", function() {
     var y = document.getElementsByClassName("about");
-    for (var i=0; i<y.length;i+=1) {
-        if (window.pageYOffset > rh){
-                y[i].style.display = "block";
-        }
-    }
-});
+    for (var i=0; i<y.length;i+=1){
+
+    if (window.pageYOffset > rh){
+            y[i].style.display = "block";
+
+    }}});
 
     
 function goToPortfolio(){
-        window.scrollTo({
-            top: rh,
-            behavior:'smooth'
-        })
+    document.getElementById('portfolio').scrollIntoView({behavior:"smooth"})
+    theToggle.classList.remove("on");
+    document.body.style.overflow = '';
+    [ 'toggle', 'menu'].forEach(function( id ) {
+
+        document.getElementById( id ).style.transition= 'all .5s';
+        
+    });
     };
-    var y = document.getElementById('about');
-        var Rect = y.getBoundingClientRect();
+
+
+     /*var y = document.getElementById('about');
+       var Rect = y.getBoundingClientRect();
         yh= Rect.height;
     alert(yh)
-    alert(rh)
+    alert(rh)*/
 function goToAbout(){
     document.getElementById('overflow').scrollIntoView({behavior:"smooth"}) /*fazer scroll into view??*/
+    theToggle.classList.remove("on");
+    document.body.style.overflow = '';
+    [ 'toggle', 'menu'].forEach(function( id ) {
+
+        document.getElementById( id ).style.transition= 'all .5s';
+        
+    });
 };
-function goToWork(){
+    function goToWork(){
     document.getElementById('footer').scrollIntoView({behavior:"smooth"})
-};
+    theToggle.classList.remove("on");
+    document.body.style.overflow = '';
+    [ 'toggle', 'menu'].forEach(function( id ) {
+
+        document.getElementById( id ).style.transition= 'all .5s';
+        
+    });
+    }
 /*function scrollTo(duration, element) {
 	var e = document.documentElement;
     if(e.scrollTop===0){
