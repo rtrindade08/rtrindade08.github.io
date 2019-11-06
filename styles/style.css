@@ -352,16 +352,7 @@ nav{
   font-size: 25px;
 }
 
-@media only screen and (max-width: 1100px) {
-  .division1{
-    width: 100%;
-    height: 48%;
-  }
-  .division2{
-    width: 100%;
-    height: 48%;
-  }
-}
+
 
   /*Slideshow*/
 .imgSlide {
@@ -467,14 +458,16 @@ nav{
 /*RESPONSIVE */
 @media only screen and (min-width: 0) and (max-width: 480px){
   .division1{
+    width: 100%;
     height: 45%;
   }
   .division2{
+    width: 100%;
     height: 40%;
   }
   .rectangleTitle{
     font-size: 30px;
-    width: 29%;
+    width: 93px;
     padding-top:10px;
   }
   .centerDivision2{
@@ -515,9 +508,11 @@ nav{
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
   .division1{
+    width: 100%;
     height: 45%;
   }
   .division2{
+    width: 100%;
     height: 40%;
   }
   .centerDivision2{
@@ -525,15 +520,13 @@ nav{
   }
   .rectangleTitle{
     font-size: 40px;
-    width: 16%;
+    width: 122.88px;
     padding-top:10px;
   }
-  .title{
+  .title, .title-textContainer{
     font-size: 35px;
   }
-  .title-textContainer{
-    font-size: 35px;
-  }
+  
   .subTitle, .subTitle-textContainer{
     font-size: 32px;
   }
@@ -568,10 +561,167 @@ nav{
     right: 40%;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .division1{
+    width: 100%;
+    height: 45%;
+  }
+  .division2{
+    width: 100%;
+    height: 40%;
+  }
+  .centerDivision2{
+    max-width: 85%;
+  }
+  .rectangleTitle{
+    font-size: 50px;
+    width: 164px;
+    padding-top: 10px;;
+  }
+  .title, .title-textContainer{
+    font-size: 40px;
+  }
+  .subTitle, .subTitle-textContainer{
+    font-size: 35px;
+  }
+  .textPortfolio{
+    font-size: 27px;
+    margin-top: 10;
+    line-height: 1.5;
+  }
+  .linkExterno, .popUp{
+    font-size: 30px;
+    padding: 10px 40px 10px 40px;
+    margin: 20px;
+  }
+  .imgSlide{
+    width: 100%;
+    padding: 0;
+  }
+  .textContainer{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .slideshow-container{
+    transform: translateY(0%);
+  }
+  .text-textContainer{
+    transform: translateY(0%);
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .prev{
+    left: 45%;
+  }
+  .next{
+    right: 45%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+  .division1{
+    width: 50%;
+  }
+  .division2{
+    width: 50%;
+  }
+  .centerDivision2{
+    max-width: 90%;
+  }
+  .rectangleTitle{
+    font-size: 55px;
+    width: 170px;
+    padding-top: 10px;;
+  }
+  .title, .title-textContainer{
+    font-size: 45px;
+  }
+  .subTitle, .subTitle-textContainer{
+    font-size: 40px;
+  }
+  .textPortfolio{
+    font-size: 28px;
+    margin-top: 0;
+    line-height: 1.5;
+  }
+  .linkExterno, .popUp{
+    font-size: 35px;
+    padding: 10px 45px 10px 45px;
+    margin: 10px;
+  }
+  .imgSlide{
+    width: 50%;
+  }
+  .textContainer{
+    width: 45%;
+  }
+  .text-textContainer{
+    transform: translateY(0%);
+    font-size: 25px;
+    
+  }
+  .prev{
+    left: 45%;
+  }
+  .next{
+    right: 45%;
+  }
+}
+@media only screen and (min-width: 1281px){
+  .division1{
+    width: 50%;
+    
+  }
+  .division2{
+    width: 50%;
+    
+  }
+  .centerDivision2{
+    max-width: 90%;
+  }
+  .rectangleTitle{
+    font-size: 60px;
+    width: 185px;
+    padding-top: 10px;
+  }
+  .title, .title-textContainer{
+    font-size: 50px;
+  }
+  .subTitle, .subTitle-textContainer{
+    font-size: 45px;
+  }
+  .textPortfolio{
+    font-size: 35px;
+    margin-top: 0;
+    line-height: 1.5;
+  }
+  .linkExterno, .popUp{
+    font-size: 40px;
+    padding: 10px 30px 10px 30px;
+    margin: 10px;
+  }
+  .imgSlide{
+    width: 50%;
+  }
+  .textContainer{
+    width: 45%;
+  }
+  .text-textContainer{
+    transform: translateY(0%);
+    font-size: 25px;
+    
+  }
+  .prev{
+    left: 45%;
+  }
+  .next{
+    right: 45%;
+  }
+}
 /*ABOUT*/    
 .overflow{
   overflow: hidden;
-  height: 75%;
+  height: auto;
   border-top: 1px solid black;
   width: 100%;
 }
@@ -581,7 +731,7 @@ nav{
   position: relative;
   /*top: 100%;*/
   /*opacity: 0;*/
-  height: 100%;
+  height: auto;
 }
 
 .aboutCenter{
@@ -598,6 +748,8 @@ nav{
     border-bottom: 1px solid black;
     padding: 10px 6px 8px 5px;
     font-size: 50px;
+    padding-bottom: 0;
+
   }
   .aboutSubtitle{
     font-family: 'Source Sans Pro', sans-serif;
@@ -613,125 +765,111 @@ nav{
     font-style: italic;
     font-size: 32px;
   }
+  .iconsGroup{
+    margin-bottom: 10px;
+  }
   .icons{
     width: 140px;
     border-radius: 10px;
     text-align: center;
     margin: 30px;
   }
-  /*@media only screen and (min-width:0px) and (max-width:320px){
-    .overflow{
-      height: 100%;
+
+  @media only screen and (min-width:0px) and (max-width:480px){
+    .aboutTitle{
+      font-size: 30px;
+      max-width: 85px;
     }
     .aboutCenter{
-      max-width: 90%;
-    }
-    .icons{
-      width: 45px;
-      margin: 10px;
-    }
-    .aboutTitle{
-      font-size: 20px;
-      max-width: 20%;
+      max-width: 85%;
     }
     .aboutSubtitle{
-      font-size:15px;
-    }
-    .aboutText{
-      font-size:14px;
-    }
-    .specialSkills{
-    font-size:15px;
-    }
-  }
-  
-  @media only screen and (min-width:321px) and (max-width:410px){
-    .overflow{
-      height: 100%;
-    }
-    .aboutCenter{
-      max-width: 90%;
-    }
-    .aboutTitle{
-      font-size: 26px;
-      max-width: 23%;
-    }
-    .aboutSubtitle{
-      font-size:17px;
+      font-size:20px;
     }
     .aboutText{
       font-size:16px;
     }
     .specialSkills{
-      font-size:17px;
+      font-size:20px;
       }
     .icons{
-      width: 55px;
+      width: 45px;
+      margin: 8px;
+    }
+  }
+  @media only screen and (min-width:481px) and (max-width:768px){
+    .aboutTitle{
+      font-size: 50px;
+      max-width: 100px;
+    }
+    .aboutCenter{
+      max-width: 85%;
+    }
+    .aboutSubtitle{
+      font-size:40px;
+    }
+    .aboutText{
+      font-size:22px;
+    }
+    .specialSkills{
+      font-size:40px;
+      }
+    .icons{
+      width: 65px;
       margin: 10px;
     }
   }
-  @media only screen and (min-width:411px) and (max-width:492px){
-    .overflow{
-      height: 100%;
+  
+  @media only screen and (min-width:769px) and (max-width:1024px){
+    .aboutTitle{
+      font-size: 50px;
+      max-width: 125px;
     }
     .aboutCenter{
-      max-width: 90%;
-    }
-    .aboutTitle{
-      font-size: 29px;
-      max-width: 22%;
+      max-width: 85%;
     }
     .aboutSubtitle{
-      font-size:18px;
+      font-size:35px;
     }
     .aboutText{
-      font-size:17px;
+      font-size:27px;
     }
     .specialSkills{
-      font-size:17px;
-      }
+      font-size:35px;
+    }
+    .iconsGroup{
+      margin-bottom: 20px;
+    }
     .icons{
-      width: 62px;
-      margin: 12px;
+      width: 80px;
+      margin: 15px;
     }
   }
-  @media only screen and (min-width:493px) and (max-width:700px){
-    .overflow{
-      height: 100%;
+  @media only screen and (min-width:1025px) and (max-width:1280px){
+    .aboutTitle{
+      font-size: 55px;
+      max-width: 125px;
     }
     .aboutCenter{
-      max-width: 90%;
-    }
-    .aboutTitle{
-      font-size: 30px;
-      max-width: 23%;
+      max-width: 85%;
     }
     .aboutSubtitle{
-      font-size:19px;
+      font-size:40px;
     }
     .aboutText{
-      font-size:18px;
+      font-size:28px;
     }
     .specialSkills{
-      font-size:23px;
-      }
+      font-size:40px;
+    }
+    .iconsGroup{
+      margin-bottom: 20px;
+    }
     .icons{
-      width: 75px;
-      margin: 12px;
+      width: 100px;
+      margin: 15px;
     }
   }
-  @media only screen and (width:375px) and (height:812px){
-    .overflow{
-      height: 80%;
-    }
-  }
-  @media only screen and (width:411px) and (height:823px){
-    .overflow{
-      height: 80%;
-    }
-
-
-  }*/
   /*FOOTER*/
   .footer{
     background-color: darkgrey;
@@ -745,42 +883,146 @@ nav{
     font-size: 50px;
     border-bottom: 1px solid black;
   }
-  .fa-envelope, .fa-phone-alt{
-    font-size: 4vw;
-    font-size: 3vh;
+  .icon-contact{
+   width: 30px;
     margin: 20px;
     vertical-align: middle;
   }
   .email,.phone{
     display: inline-block;
     vertical-align: middle;
-    font-size: 4vw;
-    font-size: 3vh;
+    font-size: 40px;
     vertical-align: middle;
+    color: black;
   }
-  /*
-@media only screen and (min-width:320px) and (max-width:650px){
-  .footer{
-    display: block;
-    height: 30%;
+  @media only screen and (min-width:0px) and (max-width:480px){
+    .footer{
+      display: block;
+    }
+    .footer-container-left{
+      width: 234px;
+      padding-top: 30px;
+      margin-left: 30px;
+    }
+    .letsWork{
+      font-size: 35px;
+    }
+    .contacts{
+      margin: 10px;
+      margin-left: 20px;
+    }
+    .icon-contact{
+      margin: 10px;
+      width: 22px;
+    }
+    .email,.phone{
+      font-size: 25px;
+      margin: 0px;
+    }
   }
-  .footer-container-left{
-    padding-top: 10px;
-    float: left;
-    margin-left: 30px;
-    padding-top: 40px;
+  @media only screen and (min-width:481px) and (max-width:768px){
+    .footer{
+      display: block;
+    }
+    .footer-container-left{
+      width: 301px;
+      padding-top: 40px;
+      margin-left: 50px;
+    }
+    .letsWork{
+      font-size: 45px;
+    }
+    .contacts{
+      margin: 10px;
+      margin-left: 40px;
+    }
+    .icon-contact{
+      margin: 10px;
+      width: 30px;
+    }
+    .email,.phone{
+      font-size: 35px;
+      margin: 0px;
+    }
+    
   }
-  .footer-container-left{
-    float: left;
-  }
-  .letsWork{
-    font-size: 30px;
-    padding: 0;
-  }
-}*/
+  @media only screen and (min-width:769px) and (max-width:1024px){
+      .footer{
+        display: flex;
+        height: auto;
+      }
+      .footer-container-left{
+        width: 334px;
+        padding: 100px 0px 100px 10px;
+      }
+      .letsWork{
+        font-size: 50px;
+        /*margin-top: -10px; EXPERIMENTAR PARA ALINHAR*/
+      }
+      .contacts{
+        margin: 0px 0px 10px 25px;
+        
+      }
+      .icon-contact{
+        margin: 10px;
+        width: 40px;
+      }
+      .email, .phone{
+        font-size: 40px;
+        margin: 0px;
+      }
+    }
+    @media only screen and (min-width:1025px) and (max-width:1280px){
+      .footer{
+        display: flex;
+        height: auto;
+      }
+      .footer-container-left{
+        width: 368px;
+        padding: 130px 0px 130px 10px;
+      }
+      .letsWork{
+        font-size: 55px;
+      }
+      .contacts{
+        margin: 0px 0px 10px 45px;
+      }
+      .icon-contact{
+        margin: 10px;
+        width: 45px;
+      }
+      .email, .phone{
+        font-size: 45px;
+        margin: 0px;
+      }
+    }  
+    @media only screen and (min-width:1281px) {
+      .footer{
+        display: flex;
+        height: auto;
+      }
+      .footer-container-left{
+        width: 435px;
+        padding: 160px 0px 160px 10px;
+      }
+      .letsWork{
+        font-size: 65px;
+      }
+      .contacts{
+        margin: 0px 0px 10px 60px;
+      }
+      .icon-contact{
+        margin: 10px;
+        width: 55px;
+      }
+      .email, .phone{
+        font-size: 55px;
+        margin: 0px;
+      }
+    }  
  /* .overflow:hover > #about{
     top: 0;
   }*/
 /* demo styles */
 body { margin:0px; padding: 0px; }
-/*p, p a { font-size: 12px;text-align: center; color: #888; }
+/*p, p a { font-size: 12px;text-align: center; color: #888; }*/
