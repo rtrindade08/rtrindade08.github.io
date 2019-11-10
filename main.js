@@ -89,12 +89,12 @@ function showSlideShow(){
             x[i].style.display="block";
 
             document.getElementById("overlay").style.display = "block";
-            document.body.style.overflow = 'hidden';
+            //document.body.style.overflow = 'hidden';
         }
         else{
             x[i].style.display="none";
             document.getElementById("overlay").style.display = "none";
-            document.body.style.overflow = '';
+            //document.body.style.overflow = '';
         }
     }
 }

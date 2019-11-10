@@ -376,7 +376,7 @@ nav{
   width: 100%;
   z-index: 2;
   cursor: pointer;
-  height: 250%;
+  height: 5000px;
   top: 0;
   bottom: 0;
 }
@@ -872,16 +872,16 @@ nav{
   }
   /*FOOTER*/
   .footer{
+    align-items: center;
     background-color: darkgrey;
-    height: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 40%;
   }
   .letsWork{
-    margin: 0;
     font-size: 50px;
-    border-bottom: 1px solid black;
+    margin: 0;
+    text-decoration: underline;
   }
   .icon-contact{
    width: 30px;
@@ -900,7 +900,6 @@ nav{
       display: block;
     }
     .footer-container-left{
-      width: 234px;
       padding-top: 30px;
       margin-left: 30px;
     }
