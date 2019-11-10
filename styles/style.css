@@ -1,8 +1,20 @@
 /* Important styles */
 .bodyGradient{
-  background-image: linear-gradient(#67527B, #D2C1FF);
+  background-image: linear-gradient(180deg, rgba(103,82,123,1) 40%, rgba(225,214,255,1) 100%);
   
 }
+@font-face {
+    font-family: 'LightFont';
+    src: url(/Fonts/SourceSansPro-Light.ttf);
+  }
+  @font-face {
+    font-family: 'SemiBoldFont';
+    src: url(/Fonts/SourceSansPro-SemiBold.ttf);
+  }
+  @font-face{
+    font-family: 'BoldFont';
+    src: url(/Fonts/SourceSansPro-Bold.ttf);
+  }
 nav{
   overflow: hidden;
   position: relative;
@@ -24,15 +36,15 @@ nav{
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+  
 }
-@font-face {
-    font-family: 'LightFont';
-    src: url(/Fonts/SourceSansPro-Light.ttf);
-  }
+
 #textHero{
   margin: 30px 30px;
   font-size:60px;
   font-family: 'LightFont';
+  color: white;
+  
 }
 
 .info{
@@ -53,6 +65,7 @@ nav{
   font-size: 25px;
   margin: 10px;
   color: white;
+  font-family: 'LightFont';
 }
 
 .slider {
@@ -63,7 +76,7 @@ nav{
 
 .menuList li a:hover > .slider {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 
@@ -82,11 +95,12 @@ nav{
 
 
 .seeMore{
-  border: 1px solid black;
+  border: 1px solid rgba(225,214,255,1);
   border-radius: 25px;
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'LightFont';
   font-size: 35px;
+  color: rgba(225,214,255,1);
   padding: 10px 40px 10px 40px;
   animation: opacity 5s ease-in;
   background-color: transparent;
@@ -133,8 +147,8 @@ nav{
   #toggle span:after,
   #toggle span:before {
     width: 100%;
-    height: 5px;
-    background-color: #888;
+    height: 2px;
+    background-color: white;
     transition: all 0.3s;
     backface-visibility: hidden;
     border-radius: 2px;
@@ -161,10 +175,10 @@ nav{
     width: 100%;
     height: 100%;
     margin: auto;
-    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    font-family: 'LightFont';
     text-align: center;
     border-radius: 4px;
-    background-image: linear-gradient(purple, lavender);
+    background-image: linear-gradient(180deg, rgba(103,82,123,1) 40%, rgba(225,214,255,1) 100%);
     box-shadow: 0 1px 8px rgba(0,0,0,0.05);
     /* just for this demo */
     opacity: 0;
@@ -258,7 +272,7 @@ nav{
   #textHero{
     font-size: 70px;
     line-height: 1.5;
-    margin: 30px 40px;
+    margin: 30px 100px;
   }
   #name{
     font-size: 40px;
@@ -278,11 +292,12 @@ nav{
 }
 .rectangleTitle{
   margin: 0 auto;
-  width: 10%;
-  border-bottom: 1px solid black;
+  color: white;
   font-size: 60px;
+  font-family: 'SemiBoldFont';
   text-align: center;
-}
+  width: max-content;
+  border-bottom: 1px solid white;}
 .division1{
   float: left;
 }
@@ -346,12 +361,17 @@ nav{
 .title{
   font-size: 35px;
   margin-bottom: 10px;
+  color: white;
 }
 .subTitle{
+  color: white;
   margin-bottom: 10px;
   font-size: 25px;
 }
+.textPortfolio{
+  color: white;
 
+}
 
 
   /*Slideshow*/
@@ -467,7 +487,6 @@ nav{
   }
   .rectangleTitle{
     font-size: 30px;
-    width: 93px;
     padding-top:10px;
   }
   .centerDivision2{
@@ -520,7 +539,6 @@ nav{
   }
   .rectangleTitle{
     font-size: 40px;
-    width: 122.88px;
     padding-top:10px;
   }
   .title, .title-textContainer{
@@ -575,7 +593,6 @@ nav{
   }
   .rectangleTitle{
     font-size: 50px;
-    width: 164px;
     padding-top: 10px;;
   }
   .title, .title-textContainer{
@@ -630,7 +647,6 @@ nav{
   }
   .rectangleTitle{
     font-size: 55px;
-    width: 170px;
     padding-top: 10px;;
   }
   .title, .title-textContainer{
@@ -681,7 +697,6 @@ nav{
   }
   .rectangleTitle{
     font-size: 60px;
-    width: 185px;
     padding-top: 10px;
   }
   .title, .title-textContainer{
@@ -741,22 +756,25 @@ nav{
   position: relative;
 }
   .aboutTitle{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'SemiBoldFont';
     margin: 0 auto;
     text-align: center;
-    max-width: 7%;
-    border-bottom: 1px solid black;
     padding: 10px 6px 8px 5px;
     font-size: 50px;
     padding-bottom: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    width: max-content;
 
   }
   .aboutSubtitle{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'SemiBoldFont';
     font-size: 32px;
+    color: white;
   }
   .aboutText{
-    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-family: 'LightFont';
     font-size: 32px;
     line-height: 1.5;
   }
@@ -778,7 +796,6 @@ nav{
   @media only screen and (min-width:0px) and (max-width:480px){
     .aboutTitle{
       font-size: 30px;
-      max-width: 85px;
     }
     .aboutCenter{
       max-width: 85%;
@@ -800,7 +817,6 @@ nav{
   @media only screen and (min-width:481px) and (max-width:768px){
     .aboutTitle{
       font-size: 50px;
-      max-width: 100px;
     }
     .aboutCenter{
       max-width: 85%;
@@ -823,7 +839,6 @@ nav{
   @media only screen and (min-width:769px) and (max-width:1024px){
     .aboutTitle{
       font-size: 50px;
-      max-width: 125px;
     }
     .aboutCenter{
       max-width: 85%;
@@ -848,7 +863,6 @@ nav{
   @media only screen and (min-width:1025px) and (max-width:1280px){
     .aboutTitle{
       font-size: 55px;
-      max-width: 125px;
     }
     .aboutCenter{
       max-width: 85%;
@@ -858,6 +872,8 @@ nav{
     }
     .aboutText{
       font-size:28px;
+      max-width: 80%;
+      margin: 0 auto;
     }
     .specialSkills{
       font-size:40px;
@@ -879,9 +895,13 @@ nav{
     height: 40%;
   }
   .letsWork{
+    color: rgba(225,214,255,1);
     font-size: 50px;
+    font-family: 'BoldFont';
+    letter-spacing: 5px;
     margin: 0;
-    text-decoration: underline;
+    border-bottom: 1px solid rgba(225,214,255,1);
+    width: max-content;
   }
   .icon-contact{
    width: 30px;

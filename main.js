@@ -40,7 +40,7 @@ theToggle.onclick = function() {
    return false;
 }*/
 
-var str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab",
+var str = "Hello! I'm Renata a frontend developer from Lisbon. Want to know more? Click below. ",
     i = 0,
     isTag,
     text;
