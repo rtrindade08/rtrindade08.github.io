@@ -8,43 +8,52 @@
   <title>Document</title>
 </head>
 <body>
-    <!--MEDIA QUERIES: 0-480, 481-768, 769-1024, 1025-1280, 1281-->
-<div class="bodyGradient"> <!--Body Gradient-->
- <!--Hero--> <!--ACABAR COM HEIGHT EM PERCENTAGEM PQ N FICA BEM EM TODOS OS ECRÃS. EXPERIMENTAR DISPLAY FLEX-->
+<!--MEDIA QUERIES: 0-480, 481-768, 769-1024, 1025-1280, 1281-->
+<div class="bodyGradient"> 
+<!--Body Gradient-->
+ <!--Hero-->
  <div id="hero">
    <nav>
     <ul class="info"> 
-      <li id="name">INFO TESTEE</li>
+      <li id="name">RENATA TRINDADE</li>
     </ul>
 <a href="#menu" id="toggle"><span></span></a>
-
     <div id="menu" class="Menu" >
-
       <ul class="menuList">
-          <li><a href="#teste" onclick="goToPortfolio()">PORTFOLIO <div class="slider"></div></a></li>
-          <li><a href="#teste1" onclick="goToAbout()">ABOUT ME <div class="slider"></div></a></li>
-          <li><a href="#contact" onclick="goToWork()"> CONTACT <div class="slider"></div></a></li>
+          <li>
+            <a href="#teste" onclick="goToPortfolio()">PORTFOLIO
+              <div class="slider"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#teste1" onclick="goToAbout()">ABOUT ME
+              <div class="slider"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onclick="goToWork()">CONTACT
+              <div class="slider"></div>
+            </a>
+          </li>
       </ul>
     </div>
    </nav>
   
     <div id="textPresentation">
-      <h1 id="textHero">
-      </h1>
+      <h1 id="textHero"></h1>
       <button class="seeMore" onclick="scrollToPage()"> See More</button>
     </div>
     <div id="overlay" onclick="hideSlideShow()"></div>
 
- </div>  <!--Hero-->
+ </div>  
+ <!--Hero-->
   <!--Slideshow-->
   <!--Slide Up   https://codepen.io/vlt5/pen/QwjbYg  
     https://www.w3schools.com/jsref/event_onscroll.asp -->
  
-
-
   <div id="rectangle">
   <h1 class="rectangleTitle" id="portfolio">PORTFOLIO</h1>
-  
+
   <div class="division1">
     <div class="centerDivision1">
       <div class="picture">
@@ -61,21 +70,16 @@
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
         nisi ut aliquip ex ea commodo consequat. </p>
-        <div class="buttons">
-          <a href="https://www.google.com" class="linkExterno">See More</a>
-          <a href="#popUp" class="popUp" onclick="showSlideShow()">Popup</a>
+      <div class="buttons">
+        <a href="https://www.google.com" class="linkExterno">See More</a>
+        <a href="#popUp" class="popUp" onclick="showSlideShow()">Popup</a>
       </div>
     </div>
   </div>
 
- 
-
   <div class="slideshow-container fade">
-
     <div class="mySlides fade">
-      
       <img class="imgSlide" src="images/service-dog-training-101.jpg">
-      
       <div class="textContainer fade">
         <div class="title-textContainer">Title1</div>
         <div class="subTitle-textContainer">Subtitle</div>
@@ -88,9 +92,7 @@
     </div>
     
     <div class="mySlides fade">
-      
       <img class="imgSlide" src="images/service-dog-training-101.jpg">
-      
       <div class="textContainer fade">
         <div class="title-textContainer">Title2</div>
         <div class="subTitle-textContainer">Subtitle</div>
@@ -103,9 +105,7 @@
     </div>
     
     <div class="mySlides fade">
-      
       <img class="imgSlide" src="images/service-dog-training-101.jpg">
-      
       <div class="textContainer fade">
         <div class="title-textContainer">Title3</div>
         <div class="subTitle-textContainer">Subtitle</div>
@@ -123,13 +123,8 @@
 
 <!--About-->
 
-
-
-
-
 <div class="overflow" id="overflow" >
   <div class="about fade" >
-    
   <h1 class="aboutTitle" >ABOUT ME</h1>
   <div class="aboutCenter">
     <h2 class="aboutSubtitle">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </h2>
@@ -142,14 +137,13 @@
       <h2 class="specialSkills">Special Skills</h2> 
       <div class="iconsGroup">
         <img src="icons/CSS.svg" class="icons">
-      <img src="icons/CSS.svg" class="icons">
-      <img src="icons/CSS.svg" class="icons">
-      <img src="icons/CSS.svg" class="icons">
-      <img src="icons/CSS.svg" class="icons">
-      <img src="icons/CSS.svg" class="icons">
-      <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
+        <img src="icons/CSS.svg" class="icons">
       </div>
-      
   </div>
 </div>
 </div>
@@ -159,32 +153,26 @@
     <div class="footer-container-left">
     <h1 class="letsWork" > LET'S  WORK!</h1>
   </div>
+
   <div class="footer-container-right">
       <div class="contacts">
       <img src="icons/CSS.svg" class="icon-contact">
       <a href="mailto:testeeeee@teste.com"><h1 class="email"> testeeeee@teste.com</h1></a>
   </div>
+
   <div class="contacts">
     <img src="icons/CSS.svg" class="icon-contact">
     <a href="tel:913 456 789"><h1 class="phone">913 456 789</h1></a>
-      
   </div>
   </div>
-  
-    
-  
 </div>
-</div> <!--Body Gradient-->
+</div> 
 
-
-
-
+<!--Body Gradient-->
 <script src="main.js"></script>
+
 </body>
 </html>
-
-
-
 
 
 <!--This was the final project of the Front End Development course I took at EDIT. We had to develop a landing page for a real customer (Volvo) 
