@@ -1,6 +1,6 @@
 /* Important styles */
 .bodyGradient{
-  background-image: linear-gradient(grey, lavender);
+  background-image: linear-gradient(#67527B, #D2C1FF);
   
 }
 nav{
@@ -873,7 +873,7 @@ nav{
   /*FOOTER*/
   .footer{
     align-items: center;
-    background-color: darkgrey;
+    background-color: #67527B;
     display: flex;
     justify-content: center;
     height: 40%;
