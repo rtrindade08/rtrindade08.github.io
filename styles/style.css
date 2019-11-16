@@ -11,6 +11,10 @@
   font-family: 'BoldFont';
   src: url(/Fonts/SourceSansPro-Bold.ttf);
 }
+@font-face{
+  font-family: 'ExtraLightFont';
+  src: url(/Fonts/SourceSansPro-ExtraLight.ttf);
+}
 .bodyGradient{
 background-image: linear-gradient(180deg, rgba(103,82,123,1) 40%, rgba(225,214,255,1) 100%);
 }
@@ -319,11 +323,11 @@ max-width: 100%;
 height: auto;
 }
 
-.portfolio--right--slideshow--container--mySlides--textContainer-text{
+.portfolio--slideshow--container--mySlides--textContainer-text{
 transform: translateY(50%);
 }
 
-.portfolio--right--slideshow--container--mySlides-textContainer {
+.portfolio--slideshow--container--mySlides-textContainer {
 color: black;
 font-size: 15px;
 padding: 8px 12px;
@@ -380,7 +384,7 @@ font-family: 'LightFont';
 
 
 /*Slideshow*/
-.portfolio--right--slideshow--container--mySlides-imgSlide {
+.portfolio--slideshow--container--mySlides-imgSlide {
 vertical-align: middle; 
 float: right;
 width:50%;
@@ -389,7 +393,7 @@ max-width: 100%;
 height: auto;
 }
 
-.hero-overlay, .portfolio--right--slideshow-container {
+.hero-overlay, .portfolio--slideshow-container {
 position: absolute;
 display: none;
 left: 0;
@@ -405,13 +409,13 @@ cursor: pointer;
 top: 0;
 bottom: 0;
 }
-.portfolio--right--slideshow--container-mySlides{
+.portfolio--slideshow--container-mySlides{
 display: none;
 margin-bottom: 20px;
 margin-top: 20px;
 }
 /* Slideshow container */
-.portfolio--right--slideshow-container {
+.portfolio--slideshow-container {
 transform: translateY(15%);
 max-width: 80%;
 position: absolute;
@@ -425,7 +429,7 @@ height: auto;
 }
 
 /* Next & previous buttons */
-.portfolio--right--slideshow--container--mySlides--btn-prev, .portfolio--right--slideshow--container--mySlides--btn-next {
+.portfolio--slideshow--container--mySlides--btn-prev, .portfolio--slideshow--container--mySlides--btn-next {
 cursor: pointer;
 position: absolute;
 top: 92%;
@@ -439,21 +443,21 @@ user-select: none;
 }
 
 /* Position the "next button" to the right */
-.portfolio--right--slideshow--container--mySlides--btn-prev{
+.portfolio--slideshow--container--mySlides--btn-prev{
 left: 47%
 }
-.portfolio--right--slideshow--container--mySlides--btn-next {
+.portfolio--slideshow--container--mySlides--btn-next {
 right: 47%;
 border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.portfolio--right--slideshow--container--mySlides--btn-prev:hover, .portfolio--right--slideshow--container--mySlides--btn-next:hover {
+.portfolio--slideshow--container--mySlides--btn-prev:hover, .portfolio--slideshow--container--mySlides--btn-next:hover {
 background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
-.portfolio--right--slideshow--container--mySlides-textContainer {
+.portfolio--slideshow--container--mySlides-textContainer {
 color: black;
 font-size: 15px;
 padding: 8px 12px;
@@ -497,13 +501,13 @@ to {opacity: 1}
 .portfolio--right-center{
   max-width: 85%;
 }
-.portfolio--right--slideshow-container{
+.portfolio--slideshow-container{
   transform: translateY(0);
 }
-.portfolio--right--center-title, .portfolio--right--slideshow--container--mySlides--textContainer-title{
+.portfolio--right--center-title, .portfolio--slideshow--container--mySlides--textContainer-title{
   font-size: 20px;
 }
-.portfolio--right--center-subTitle, .portfolio--right--slideshow--container--mySlides--textContainer-subTitle{
+.portfolio--right--center-subTitle, .portfolio--slideshow--container--mySlides--textContainer-subTitle{
   font-size: 18px;
 }
 .portfolio--right--center-textPortfolio{
@@ -511,22 +515,22 @@ to {opacity: 1}
   margin-top: 0;
   line-height: 1.5;
 }
-.portfolio--right--slideshow--container--mySlides-imgSlide{
+.portfolio--slideshow--container--mySlides-imgSlide{
   width: 100%;
   padding: 0;
 }
-.portfolio--right--slideshow--container--mySlides-textContainer{
+.portfolio--slideshow--container--mySlides-textContainer{
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
 }
-.portfolio--right--slideshow--container--mySlides--textContainer-text{
+.portfolio--slideshow--container--mySlides--textContainer-text{
   transform: translateY(0%);
 }
-.portfolio--right--slideshow--container--mySlides--btn-prev{
+.portfolio--slideshow--container--mySlides--btn-prev{
   left: 40%;
 }
-.portfolio--right--slideshow--container--mySlides--btn-next{
+.portfolio--slideshow--container--mySlides--btn-next{
   right: 40%;
 }
 }
@@ -546,11 +550,11 @@ to {opacity: 1}
   font-size: 40px;
   padding-top:10px;
 }
-.portfolio--right--center-title, .portfolio--right--slideshow--container--mySlides--textContainer-title{
+.portfolio--right--center-title, .portfolio--slideshow--container--mySlides--textContainer-title{
   font-size: 35px;
 }
 
-.portfolio--right--center-subTitle, .portfolio--right--slideshow--container--mySlides--textContainer-subTitle{
+.portfolio--right--center-subTitle, .portfolio--slideshow--container--mySlides--textContainer-subTitle{
   font-size: 32px;
 }
 .portfolio--right--center-textPortfolio{
@@ -563,24 +567,24 @@ to {opacity: 1}
   padding: 10px 30px 10px 30px;
   margin: 10px;
 }
-.portfolio--right--slideshow--container--mySlides-imgSlide{
+.portfolio--slideshow--container--mySlides-imgSlide{
   width: 100%;
   padding: 0;
 }
-.portfolio--right--slideshow--container--mySlides-textContainer{
+.portfolio--slideshow--container--mySlides-textContainer{
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
 }
-.portfolio--right--slideshow--container--mySlides--textContainer-text{
+.portfolio--slideshow--container--mySlides--textContainer-text{
   transform: translateY(0%);
   font-size: 20px;
   padding-bottom: 20px;
 }
-.portfolio--right--slideshow--container--mySlides--btn-prev{
+.portfolio--slideshow--container--mySlides--btn-prev{
   left: 40%;
 }
-.portfolio--right--slideshow--container--mySlides--btn-next{
+.portfolio--slideshow--container--mySlides--btn-next{
   right: 40%;
 }
 }
@@ -600,10 +604,10 @@ to {opacity: 1}
   font-size: 50px;
   padding-top: 10px;;
 }
-.portfolio--right--center-title, .portfolio--right--slideshow--container--mySlides--textContainer-title{
+.portfolio--right--center-title, .portfolio--slideshow--container--mySlides--textContainer-title{
   font-size: 40px;
 }
-.portfolio--right--center-subTitle, .portfolio--right--slideshow--container--mySlides--textContainer-subTitle{
+.portfolio--right--center-subTitle, .portfolio--slideshow--container--mySlides--textContainer-subTitle{
   font-size: 35px;
 }
 .portfolio--right--center-textPortfolio{
@@ -616,27 +620,27 @@ to {opacity: 1}
   padding: 10px 40px 10px 40px;
   margin: 20px;
 }
-.portfolio--right--slideshow--container--mySlides-imgSlide{
+.portfolio--slideshow--container--mySlides-imgSlide{
   width: 100%;
   padding: 0;
 }
-.portfolio--right--slideshow--container--mySlides-textContainer{
+.portfolio--slideshow--container--mySlides-textContainer{
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
 }
-.portfolio--right--slideshow-container{
+.portfolio--slideshow-container{
   transform: translateY(0%);
 }
-.portfolio--right--slideshow--container--mySlides--textContainer-text{
+.portfolio--slideshow--container--mySlides--textContainer-text{
   transform: translateY(0%);
   font-size: 20px;
   padding-bottom: 30px;
 }
-.portfolio--right--slideshow--container--mySlides--btn-prev{
+.portfolio--slideshow--container--mySlides--btn-prev{
   left: 45%;
 }
-.portfolio--right--slideshow--container--mySlides--btn-next{
+.portfolio--slideshow--container--mySlides--btn-next{
   right: 45%;
 }
 }
@@ -654,10 +658,10 @@ to {opacity: 1}
   font-size: 55px;
   padding-top: 10px;;
 }
-.portfolio--right--center-title, .portfolio--right--slideshow--container--mySlides--textContainer-title{
+.portfolio--right--center-title, .portfolio--slideshow--container--mySlides--textContainer-title{
   font-size: 45px;
 }
-.portfolio--right--center-subTitle, .portfolio--right--slideshow--container--mySlides--textContainer-subTitle{
+.portfolio--right--center-subTitle, .portfolio--slideshow--container--mySlides--textContainer-subTitle{
   font-size: 40px;
 }
 .portfolio--right--center-textPortfolio{
@@ -670,21 +674,21 @@ to {opacity: 1}
   padding: 10px 45px 10px 45px;
   margin: 10px;
 }
-.portfolio--right--slideshow--container--mySlides-imgSlide{
+.portfolio--slideshow--container--mySlides-imgSlide{
   width: 50%;
 }
-.portfolio--right--slideshow--container--mySlides-textContainer{
+.portfolio--slideshow--container--mySlides-textContainer{
   width: 45%;
 }
-.portfolio--right--slideshow--container--mySlides--textContainer-text{
+.portfolio--slideshow--container--mySlides--textContainer-text{
   transform: translateY(0%);
   font-size: 25px;
   
 }
-.portfolio--right--slideshow--container--mySlides--btn-prev{
+.portfolio--slideshow--container--mySlides--btn-prev{
   left: 45%;
 }
-.portfolio--right--slideshow--container--mySlides--btn-next{
+.portfolio--slideshow--container--mySlides--btn-next{
   right: 45%;
 }
 }
@@ -704,10 +708,10 @@ to {opacity: 1}
   font-size: 60px;
   padding-top: 10px;
 }
-.portfolio--right--center-title, .portfolio--right--slideshow--container--mySlides--textContainer-title{
+.portfolio--right--center-title, .portfolio--slideshow--container--mySlides--textContainer-title{
   font-size: 50px;
 }
-.portfolio--right--center-subTitle, .portfolio--right--slideshow--container--mySlides--textContainer-subTitle{
+.portfolio--right--center-subTitle, .portfolio--slideshow--container--mySlides--textContainer-subTitle{
   font-size: 45px;
 }
 .portfolio--right--center-textPortfolio{
@@ -720,21 +724,21 @@ to {opacity: 1}
   padding: 10px 30px 10px 30px;
   margin: 10px;
 }
-.portfolio--right--slideshow--container--mySlides-imgSlide{
+.portfolio--slideshow--container--mySlides-imgSlide{
   width: 50%;
 }
-.portfolio--right--slideshow--container--mySlides-textContainer{
+.portfolio--slideshow--container--mySlides-textContainer{
   width: 45%;
 }
-.portfolio--right--slideshow--container--mySlides--textContainer-text{
+.portfolio--slideshow--container--mySlides--textContainer-text{
   transform: translateY(0%);
   font-size: 25px;
   
 }
-.portfolio--right--slideshow--container--mySlides--btn-prev{
+.portfolio--slideshow--container--mySlides--btn-prev{
   left: 45%;
 }
-.portfolio--right--slideshow--container--mySlides--btn-next{
+.portfolio--slideshow--container--mySlides--btn-next{
   right: 45%;
 }
 }
@@ -896,9 +900,8 @@ position: relative;
 }
 .footer--container--left-title{
   color: rgba(225,214,255,1);
-  font-size: 50px;
   font-family: 'BoldFont';
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   margin: 0;
   border-bottom: 1px solid rgba(225,214,255,1);
   width: max-content;
@@ -908,12 +911,11 @@ position: relative;
   margin: 20px;
   vertical-align: middle;
 }
-.footer--container--right--contacts-email,.footer--container--right--contacts{
+.footer--container--right--contacts-email,.footer--container--right--contacts-phone{
   display: inline-block;
   vertical-align: middle;
-  font-size: 40px;
-  vertical-align: middle;
-  color: black;
+  color: rgba(225,214,255,1);
+  font-family: 'ExtraLightFont';
 }
 @media only screen and (min-width:0px) and (max-width:480px){
   .footer{
@@ -936,7 +938,7 @@ position: relative;
     margin: 0;
     width: 22px;
   }
-  .footer--container--right--contacts-email,.footer--container--right--contacts{
+  .footer--container--right--contacts-email,.footer--container--right--contacts-phone{
     font-size: 18px;
     margin: 0px;
   }
@@ -961,7 +963,7 @@ position: relative;
     margin: 0px;
     width: 30px;
   }
-  .footer--container--right--contacts-email,.footer--container--right--contacts{
+  .footer--container--right--contacts-email,.footer--container--right--contacts-phone{
     font-size: 27px;
     margin: 0px;
   }
@@ -988,7 +990,7 @@ position: relative;
       margin: 10px;
       width: 40px;
     }
-    .footer--container--right--contacts-email, .footer--container--right--contacts{
+    .footer--container--right--contacts-email, .footer--container--right--contacts-phone{
       font-size: 40px;
       margin: 0px;
     }
@@ -1012,7 +1014,7 @@ position: relative;
       margin: 10px;
       width: 45px;
     }
-    .footer--container--right--contacts-email, .footer--container--right--contacts{
+    .footer--container--right--contacts-email, .footer--container--right--contacts-phone{
       font-size: 45px;
       margin: 0px;
     }
@@ -1036,8 +1038,8 @@ position: relative;
       margin: 10px;
       width: 55px;
     }
-    .footer--container--right--contacts-email, .footer--container--right--contacts{
-      font-size: 55px;
+    .footer--container--right--contacts-email, .footer--container--right--contacts-phone{
+      font-size: 350px;
       margin: 0px;
     }
   }  
