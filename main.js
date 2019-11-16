@@ -81,7 +81,7 @@ theToggle.onclick = function (){
 }
 //document.body.style.overflow = '';
 //show Slideshow
-var x = document.getElementsByClassName("portfolio--slideshow-container");
+var x = document.getElementsByClassName("slideshow-container");
 
 function showSlideShow(){
     for (var i=0; i < x.length; i+=1){
@@ -100,7 +100,7 @@ function showSlideShow(){
 }
 //hide Slideshow
 function hideSlideShow(){
-    var x =  document.getElementsByClassName("portfolio--slideshow-container");
+    var x =  document.getElementsByClassName("slideshow-container");
     for (var i=0; i < x.length; i+=1){
         if(x[i].style.display === "block"){
             x[i].style.display = "none";
@@ -126,7 +126,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("portfolio--slideshow--container-mySlides");
+  var slides = document.getElementsByClassName("mySlides");
   
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
