@@ -1,6 +1,6 @@
 /* Important styles */
 .bodyGradient{
-  background-image: linear-gradient(180deg, rgba(103,82,123,1) 40%, rgba(225,214,255,1) 100%);
+  background-image: linear-gradient(180deg, rgba(103,82,123,1) 40%, rgb(197, 187, 224) 100%);
 }
 @font-face {
   font-family: 'LightFont';
@@ -341,12 +341,18 @@ nav{
 }
 
 .linkExterno, .popUp{
+  font-family: 'LightFont';
   position: relative;
-  border: 1px solid black;
   border-radius: 25px;
-  padding: 10px 20px 10px 20px;
   text-decoration: none;
-  color: white;  
+}
+.linkExterno{
+  border: 1px solid rgb(197, 187, 224);
+  color: rgb(197, 187, 224);
+}
+.popUp{
+  border: 1px solid rgb(40, 35, 54);
+  color: rgb(40, 35, 54);
 }
 .division1{
   width: 50%;
@@ -360,7 +366,7 @@ nav{
 .centerDivision2{
   max-width: 95%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   position: relative;
   transform: translateY(-50%);
   top: 50%;
@@ -369,7 +375,7 @@ nav{
   font-size: 35px;
   margin-bottom: 10px;
   color: white;
-  font-family: 'Lightfont';
+  font-family: 'LightItalicFont';
 }
 .subTitle{
   color: white;
@@ -405,7 +411,7 @@ nav{
   width: 100%;
   z-index: 2;
   cursor: pointer;
-  height: 5000px;
+  position: fixed;
   top: 0;
   bottom: 0;
 }
@@ -459,6 +465,7 @@ nav{
 /* Caption text */
 .textContainer {
   color: black;
+  font-family: 'LightFont';
   font-size: 15px;
   padding: 8px 12px;
   width: 45%;
@@ -466,7 +473,15 @@ nav{
   text-align: center;
   height: auto;
 }
-
+.title-textContainer{
+  font-family: 'LightItalicFont';
+}
+.subTitle-textContainer{
+  font-family: 'BoldFont';
+}
+.text-textContainer{
+  font-family: 'LightFont';
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -705,34 +720,43 @@ nav{
     max-width: 90%;
   }
   .rectangleTitle{
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 10px;
   }
-  .title, .title-textContainer{
-    font-size: 50px;
+  .title,.title-textContainer{
+    font-size: 30px;
   }
+  
   .subTitle, .subTitle-textContainer{
     font-size: 45px;
   }
+   
   .textPortfolio{
-    font-size: 35px;
+    font-size: 23px;
     margin-top: 0;
     line-height: 1.5;
-  }
+    padding-bottom: 30px;
+}
+.linkExterno{
+  text-align: left;
+  margin-right: 40px;
+}
   .linkExterno, .popUp{
-    font-size: 40px;
-    padding: 10px 30px 10px 30px;
-    margin: 10px;
+    font-size: 23px;
+    padding: 10px 60px 10px 60px;
+    
   }
   .imgSlide{
     width: 50%;
   }
   .textContainer{
     width: 45%;
+    text-align: left;
+    margin-left: 20px;
   }
   .text-textContainer{
     transform: translateY(0%);
-    font-size: 25px;
+    font-size: 23px;
     
   }
   .prev{
