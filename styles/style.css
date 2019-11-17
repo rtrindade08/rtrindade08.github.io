@@ -423,7 +423,6 @@ nav{
 /* Slideshow container */
 .slideshow-container {
   transform: translateY(15%);
-  max-width: 80%;
   position: absolute;
   margin: auto;
   border: 1px solid black;
@@ -475,12 +474,15 @@ nav{
 }
 .title-textContainer{
   font-family: 'LightItalicFont';
+  color: rgb(103,82,123,1);
 }
 .subTitle-textContainer{
   font-family: 'BoldFont';
+  color: rgb(103,82,123,1);
 }
 .text-textContainer{
   font-family: 'LightFont';
+  color: rgb(103,82,123,1);
 }
 /* Fading animation */
 .fade {
@@ -620,24 +622,31 @@ nav{
     padding-top: 10px;;
   }
   .title, .title-textContainer{
-    font-size: 40px;
+    font-size: 30px;
+    text-align: left;
   }
   .subTitle, .subTitle-textContainer{
     font-size: 35px;
+    text-align: left;
   }
   .textPortfolio{
-    font-size: 27px;
+    font-size: 24px;
     margin-top: 10;
     line-height: 1.5;
+    text-align: justify;
+    padding-bottom: 20px;;
+  }
+  .linkExterno{
+    margin-right: 50px;
   }
   .linkExterno, .popUp{
-    font-size: 30px;
-    padding: 10px 40px 10px 40px;
-    margin: 20px;
+    font-size: 24px;
+    padding: 10px 60px 10px 60px;
   }
   .imgSlide{
     width: 100%;
     padding: 0;
+    margin-bottom: 15px;
   }
   .textContainer{
     width: 100%;
@@ -651,6 +660,7 @@ nav{
     transform: translateY(0%);
     font-size: 20px;
     padding-bottom: 30px;
+    text-align: justify;
   }
   .prev{
     left: 45%;
@@ -670,35 +680,41 @@ nav{
     max-width: 90%;
   }
   .rectangleTitle{
-    font-size: 55px;
+    font-size: 45px;
     padding-top: 10px;
   }
   .title, .title-textContainer{
-    font-size: 45px;
+    font-size: 25px;
   }
   .subTitle, .subTitle-textContainer{
     font-size: 40px;
   }
   .textPortfolio{
-    font-size: 28px;
+    font-size: 21px;
     margin-top: 0;
     line-height: 1.5;
+    padding-bottom: 20px;
   }
   .linkExterno, .popUp{
-    font-size: 35px;
+    font-size: 21px;
     padding: 10px 45px 10px 45px;
-    margin: 10px;
+    margin-right: 25px;
+  }
+  .slideshow-container{
+    height: 80%;
+    width: 90%;
   }
   .imgSlide{
     width: 50%;
   }
   .textContainer{
-    width: 45%;
+    width: 30%;
+    text-align: left;
+    margin-left: 15px;
   }
   .text-textContainer{
     transform: translateY(0%);
-    font-size: 25px;
-    
+    font-size: 21px;
   }
   .prev{
     left: 45%;
@@ -745,6 +761,10 @@ nav{
     font-size: 23px;
     padding: 10px 60px 10px 60px;
     
+  }
+  .slideshow-container{
+    height: 80%;
+    width: 90%;
   }
   .imgSlide{
     width: 50%;
