@@ -141,18 +141,7 @@ function showSlides(n) {
 function myFunction() {
     document.getElementById("about").style.top = "0";
   }*/
-var rectangle = document.getElementById('rectangle');
-var Rect = rectangle.getBoundingClientRect();
-rh = Rect.height;
 
-  document.addEventListener("scroll", function() {
-    var y = document.getElementsByClassName("about");
-    for (var i=0; i<y.length;i+=1){
-
-    if (window.pageYOffset > rh){
-            y[i].style.display = "block";
-
-    }}});
 
     
 function goToPortfolio(){
@@ -173,7 +162,7 @@ function goToPortfolio(){
     alert(yh)
     alert(rh)*/
 function goToAbout(){
-    document.getElementById('overflow').scrollIntoView({behavior:"smooth"}) /*fazer scroll into view??*/
+    document.getElementById('about').scrollIntoView({behavior:"smooth"}) /*fazer scroll into view??*/
     theToggle.classList.remove("on");
     document.body.style.overflow = '';
     [ 'toggle', 'menu'].forEach(function( id ) {

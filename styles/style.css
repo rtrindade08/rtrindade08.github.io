@@ -743,15 +743,9 @@ nav{
   }
 }
 /*ABOUT*/    
-.overflow{
-  overflow: hidden;
-  height: auto;
-  border-top: 1px solid black;
-  width: 100%;
-}
+
 
 .about{
-  display: none;
   position: relative;
   /*top: 100%;*/
   /*opacity: 0;*/
@@ -793,9 +787,7 @@ nav{
     font-size: 32px;
     color: white;
   }
-  .iconsGroup{
-    margin-bottom: 10px;
-  }
+  
   .icons{
     width: 140px;
     border-radius: 10px;
@@ -863,7 +855,7 @@ nav{
       font-size:35px;
     }
     .iconsGroup{
-      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
     .icons{
       width: 80px;
@@ -889,7 +881,7 @@ nav{
       font-size:40px;
     }
     .iconsGroup{
-      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
     .icons{
       width: 100px;
@@ -915,7 +907,7 @@ nav{
       font-size:40px;
     }
     .iconsGroup{
-      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
     .icons{
       width: 100px;
