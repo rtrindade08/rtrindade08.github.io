@@ -568,25 +568,32 @@ nav{
     padding-top:10px;
   }
   .title, .title-textContainer{
-    font-size: 35px;
+    font-size: 25px;
+    text-align: left;
   }
   
   .subTitle, .subTitle-textContainer{
-    font-size: 32px;
+    font-size: 30px;
+    text-align: left;
   }
   .textPortfolio{
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 0;
     line-height: 1.5;
+    padding-bottom: 20px;
+    text-align: justify;
+  }
+  .linkExterno{
+    margin-right: 20px;
   }
   .linkExterno, .popUp{
-    font-size: 25px;
-    padding: 10px 30px 10px 30px;
-    margin: 10px;
+    font-size: 20px;
+    padding: 10px 35px 10px 35px;
   }
   .imgSlide{
     width: 100%;
     padding: 0;
+    margin-bottom: 15px;;
   }
   .textContainer{
     width: 100%;
@@ -595,8 +602,9 @@ nav{
   }
   .text-textContainer{
     transform: translateY(0%);
-    font-size: 20px;
-    padding-bottom: 20px;
+    font-size: 18px;
+    padding-bottom: 30px;
+    text-align: justify;
   }
   .prev{
     left: 40%;
