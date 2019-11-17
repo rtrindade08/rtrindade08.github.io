@@ -1027,11 +1027,11 @@ nav{
       margin-left: 20px;
     }
     .icon-contact{
-      margin: 10px;
+      margin: 5px;
       width: 22px;
     }
     .email,.phone{
-      font-size: 25px;
+      font-size: 18px;
       margin: 0px;
     }
   }
@@ -1056,7 +1056,7 @@ nav{
       width: 30px;
     }
     .email,.phone{
-      font-size: 35px;
+      font-size: 25px;
       margin: 0px;
     }
     
@@ -1071,19 +1071,19 @@ nav{
         padding: 100px 0px 100px 10px;
       }
       .letsWork{
-        font-size: 50px;
+        font-size: 45px;
         /*margin-top: -10px; EXPERIMENTAR PARA ALINHAR*/
       }
       .contacts{
-        margin: 0px 0px 10px 25px;
+        margin: 0px 0px 10px 10px;
         
       }
       .icon-contact{
-        margin: 10px;
+        margin: 5px;
         width: 40px;
       }
       .email, .phone{
-        font-size: 40px;
+        font-size: 25px;
         margin: 0px;
       }
     }
@@ -1107,7 +1107,7 @@ nav{
         width: 45px;
       }
       .email, .phone{
-        font-size: 45px;
+        font-size: 30px;
         margin: 0px;
       }
     }  
