@@ -18,6 +18,10 @@
   font-family: 'ExtraLightFont';
   src: url(/Fonts/SourceSansPro-ExtraLight.ttf);
 }
+@font-face{
+  font-family: 'LightItalicFont';
+  src: url(/Fonts/SourceSansPro-LightItalic.ttf);
+}
 nav{
   overflow: hidden;
   position: relative;
@@ -65,7 +69,6 @@ nav{
   display: inline-block;
   padding: 0;
   text-decoration: none;
-  font-size: 25px;
   margin: 10px;
   color: white;
   font-family: 'Lightfont';
@@ -102,7 +105,6 @@ nav{
   border-radius: 25px;
   text-decoration: none;
   font-family: 'LightFont';
-  font-size: 35px;
   color: rgba(225,214,255,1);
   padding: 10px 40px 10px 40px;
   animation: opacity 5s ease-in;
@@ -197,7 +199,7 @@ nav{
 }
 @media only screen and (min-width: 0) and (max-width: 480px){
   #textHero{
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1.5;
     margin: 30px 40px;
   }
@@ -219,12 +221,12 @@ nav{
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
   #textHero{
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1.5;
   }
   #name{
     margin: 0;
-    font-size: 25px;
+    font-size: 22px;
   }
   .seeMore{
     font-size: 25px;
@@ -235,56 +237,56 @@ nav{
     display: inline-block;
   }
   .menuList, li a{
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
   #textHero{
-    font-size: 50px;
+    font-size: 45px;
     line-height: 1.5;
     margin: 30px 40px;
   }
   #name{
-    font-size: 30px;
+    font-size: 25px;
   }
   .seeMore{
     font-size: 30px;
   }
   .menuList, li a{
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px){
   #textHero{
-    font-size: 60px;
+    font-size: 55px;
     line-height: 1.5;
     margin: 30px 40px;
   }
   #name{
-    font-size: 35px;
+    font-size: 30px;
   }
   .seeMore{
     font-size: 35px;
   }
   .menuList, li a{
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 1281px){
   #textHero{
-    font-size: 70px;
+    font-size: 60px;
     line-height: 1.5;
     margin: 30px 100px;
   }
   #name{
-    font-size: 40px;
+    font-size: 35px;
   }
   .seeMore{
     font-size: 40px;
   }
   .menuList, li a{
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -786,9 +788,10 @@ nav{
     line-height: 1.5;
   }
   .specialSkills{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'LightItalicFont';
     font-style: italic;
     font-size: 32px;
+    color: white;
   }
   .iconsGroup{
     margin-bottom: 10px;
@@ -893,6 +896,34 @@ nav{
       margin: 15px;
     }
   }
+  @media only screen and (min-width: 1281px){
+    .aboutTitle{
+      font-size: 50px;
+      margin-bottom: 25px;
+    }
+    .aboutSubtitle{
+      font-size: 40px;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .aboutText{
+      font-size:28px;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .specialSkills{
+      font-size:40px;
+    }
+    .iconsGroup{
+      margin-bottom: 20px;
+    }
+    .icons{
+      width: 100px;
+      margin: 20px;
+    }
+  }
+  
+  
   /*FOOTER*/
   .footer{
     align-items: center;
@@ -1047,9 +1078,7 @@ nav{
         margin: 0px;
       }
     }  
- /* .overflow:hover > #about{
-    top: 0;
-  }*/
+ 
 /* demo styles */
 body { margin:0px; padding: 0px; }
 /*p, p a { font-size: 12px;text-align: center; color: #888; }*/
