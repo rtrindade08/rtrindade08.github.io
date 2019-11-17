@@ -522,19 +522,29 @@ nav{
     transform: translateY(0);
   }
   .title, .title-textContainer{
-    font-size: 20px;
+    font-size: 16px;
+    text-align: left;
   }
   .subTitle, .subTitle-textContainer{
-    font-size: 18px;
+    font-size: 20px;
+    text-align: left;
   }
   .textPortfolio{
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 0;
     line-height: 1.5;
+  }
+  .linkExterno{
+    margin-right: 15px;
+  }
+  .linkExterno, .popUp{
+    font-size: 15px;
+    padding: 10px 30px 10px 30px;
   }
   .imgSlide{
     width: 100%;
     padding: 0;
+    margin-bottom: 15px;
   }
   .textContainer{
     width: 100%;
@@ -543,6 +553,9 @@ nav{
   }
   .text-textContainer{
     transform: translateY(0%);
+    font-size: 15px;
+    padding-bottom: 20px;
+    text-align: justify;
   }
   .prev{
     left: 40%;
@@ -564,7 +577,7 @@ nav{
     max-width: 85%;
   }
   .rectangleTitle{
-    font-size: 40px;
+    font-size: 35px;
     padding-top:10px;
   }
   .title, .title-textContainer{
@@ -593,7 +606,7 @@ nav{
   .imgSlide{
     width: 100%;
     padding: 0;
-    margin-bottom: 15px;;
+    margin-bottom: 15px;
   }
   .textContainer{
     width: 100%;
@@ -626,7 +639,7 @@ nav{
     max-width: 85%;
   }
   .rectangleTitle{
-    font-size: 50px;
+    font-size: 45px;
     padding-top: 10px;;
   }
   .title, .title-textContainer{
@@ -688,7 +701,7 @@ nav{
     max-width: 90%;
   }
   .rectangleTitle{
-    font-size: 45px;
+    font-size: 40px;
     padding-top: 10px;
   }
   .title, .title-textContainer{
