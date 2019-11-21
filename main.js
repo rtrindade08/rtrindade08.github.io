@@ -2,45 +2,58 @@
 // based on Todd Motto functions
 // https://toddmotto.com/labs/reusable-js/
 
-// hasClass
-/*function hasClass(elem, className) {
-	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-}
-// addClass
-function addClass(elem, className) {
-    if (!hasClass(elem, className)) {
-    	elem.className += ' ' + className;
-    }
-}
-// removeClass
-function removeClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-	if (hasClass(elem, className)) {
-        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-            newClass = newClass.replace(' ' + className + ' ', ' ');
-        }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    }
-}*/
-// toggleClass
-/*function toggleClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
-    if (hasClass(elem, className)) {
-        while (newClass.indexOf(" " + className + " ") >= 0 ) {
-            newClass = newClass.replace( " " + className + " " , " " );
-        }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    } else {
-        elem.className += ' ' + className;
+//Show Hamburguer Icon
+var theToggle = document.getElementById('toggle');
+theToggle.onclick = function (){
+    
+    if(theToggle.classList.toggle("on")){
+        document.body.style.overflow = 'hidden';
+        
+    }else{
+        document.body.style.overflow = '';
+        document.getElementById("toggle").style.transition= 'all .5s';
+        [ 'toggle', 'menu'].forEach(function( id ) {
+            document.getElementById( id ).style.transition= 'all .5s';
+        });
     }
 }
 
-theToggle.onclick = function() {
-   toggleClass(this, 'on');
-   return false;
-}*/
+//On click, the hamburguer icon and the menu disappear. this is only for mobile
+function goToPortfolio(){
+    /*document.getElementById('portfolio').scrollIntoView({behavior:"smooth"})*/
+    theToggle.classList.remove("on");
+    document.body.style.overflow = '';
+    [ 'toggle', 'menu'].forEach(function( id ) {
 
-var str = "Hello! I'm Renata a frontend developer from Lisbon. Want to know more? Click below. ",
+        document.getElementById( id ).style.transition= 'all .5s';
+        
+        });
+    };
+
+//On click, the hamburguer icon and the menu disappear. this is only for mobile     
+function goToAbout(){
+    /*document.getElementById('about').scrollIntoView({behavior:"smooth"})*/ /*fazer scroll into view??*/
+    theToggle.classList.remove("on");
+    document.body.style.overflow = '';
+    [ 'toggle', 'menu'].forEach(function( id ) {
+
+        document.getElementById( id ).style.transition= 'all .5s';
+        
+    });
+};
+
+//On click, the hamburguer icon and the menu disappear. this is only for mobile     
+function goToWork(){
+    /*document.getElementById('footer').scrollIntoView({behavior:"smooth"})*/
+    theToggle.classList.remove("on");
+    document.body.style.overflow = '';
+    [ 'toggle', 'menu'].forEach(function( id ) {
+
+        document.getElementById( id ).style.transition= 'all .5s';
+        });
+    }
+//Text showing on hero like typweriter
+var str = "Hello! I'm Renata, a frontend developer from Lisbon. Want to know more? Click below. ",
     i = 0,
     isTag,
     text;
@@ -61,25 +74,6 @@ var str = "Hello! I'm Renata a frontend developer from Lisbon. Want to know more
 ());
 
 
-function scrollToPage (){
-    document.getElementById('rectangle').scrollIntoView({behavior:"smooth"})  //provavelmente vou ter de usar jquery
-}
-//Show Hamburguer Icon
-var theToggle = document.getElementById('toggle');
-theToggle.onclick = function (){
-    
-    if(theToggle.classList.toggle("on")){
-        document.body.style.overflow = 'hidden';
-        
-    }else{
-        document.body.style.overflow = '';
-        [ 'toggle', 'menu'].forEach(function( id ) {
-            document.getElementById( id ).style.transition= 'all .5s';
-        });
-    }
-    
-}
-//document.body.style.overflow = '';
 //show Slideshow
 var x = document.getElementsByClassName("slideshow-container");
 
@@ -95,6 +89,7 @@ function showSlideShow(){
             x[i].style.display="none";
             document.getElementById("overlay").style.display = "none";
             //document.body.style.overflow = '';
+            
         }
     }
 }
@@ -136,119 +131,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
 }
 
-/*document.getElementById("rectangle").addEventListener("mouseover", myFunction);
-
-function myFunction() {
-    document.getElementById("about").style.top = "0";
-  }*/
-
-
-    
-function goToPortfolio(){
-    document.getElementById('portfolio').scrollIntoView({behavior:"smooth"})
-    theToggle.classList.remove("on");
-    document.body.style.overflow = '';
-    [ 'toggle', 'menu'].forEach(function( id ) {
-
-        document.getElementById( id ).style.transition= 'all .5s';
-        
-    });
-    };
-
-
-     /*var y = document.getElementById('about');
-       var Rect = y.getBoundingClientRect();
-        yh= Rect.height;
-    alert(yh)
-    alert(rh)*/
-function goToAbout(){
-    document.getElementById('about').scrollIntoView({behavior:"smooth"}) /*fazer scroll into view??*/
-    theToggle.classList.remove("on");
-    document.body.style.overflow = '';
-    [ 'toggle', 'menu'].forEach(function( id ) {
-
-        document.getElementById( id ).style.transition= 'all .5s';
-        
-    });
-};
-    function goToWork(){
-    document.getElementById('footer').scrollIntoView({behavior:"smooth"})
-    theToggle.classList.remove("on");
-    document.body.style.overflow = '';
-    [ 'toggle', 'menu'].forEach(function( id ) {
-
-        document.getElementById( id ).style.transition= 'all .5s';
-        
-    });
-    }
-/*function scrollTo(duration, element) {
-	var e = document.documentElement;
-    if(e.scrollTop===0){
-        var t = e.scrollTo;
-        ++e.scrollTo;
-        e = t+1===e.scrollTo--?e:document.body;
-    }
-    scrollToC(e, e.scrollTo, element, duration);
-}
-
-// Element to move, element or px from, element or px to, time in ms to animate
-function scrollToC(element, from, to, duration) {
-    if (duration <= 0) return;
-    if(typeof from === "object")from=from.offsetTop;
-    if(typeof to === "object")to=to.offsetTop;
-
-    scrollToX(element, from, to, 0, 1/duration, 20);
-}
-
-function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
-    if (t01 < 0 || t01 > 1 || speed<= 0) {
-       element.scrollTo = xTo;
-        return;
-    }
-	element.scrollTo = xFrom - (xFrom - xTo) * motion(t01);
-	t01 += speed * step;
-	
-	setTimeout(function() {
-		scrollToX(element, xFrom, xTo, t01, speed, step, motion);
-	}, step);
-}
-*/
-
-    
-
-// Element to move, time in ms to animate
-/*function scrollTo(element, duration) {
-    var e = document.documentElement;
-    if(e.scrollTop===0){
-        var t = e.scrollTop;
-        ++e.scrollTop;
-        e = t+1===e.scrollTop--?e:document.body;
-    }
-    scrollToC(e, e.scrollTop, element, duration);
-}
-
-// Element to move, element or px from, element or px to, time in ms to animate
-function scrollToC(element, from, to, duration) {
-    if (duration <= 0) return;
-    if(typeof from === "object")from=from.offsetTop;
-    if(typeof to === "object")to=to.offsetTop;
-
-    scrollToX(element, from, to, 0, 1/duration, 20, easeOutCuaic);
-}
-
-function scrollToX(element, xFrom, xTo, t01, speed, step, motion) {
-    if (t01 < 0 || t01 > 1 || speed<= 0) {
-        element.scrollTop = xTo;
-        return;
-    }
-    element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
-    t01 += speed * step;
-
-    setTimeout(function() {
-        scrollToX(element, xFrom, xTo, t01, speed, step, motion);
-    }, step);
-}
-function easeOutCuaic(t){
-    t--;
-    return t*t*t+1;
-}*/

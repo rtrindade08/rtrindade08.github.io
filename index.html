@@ -7,9 +7,11 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
+<body >
+  
 <!--MEDIA QUERIES: 0-480, 481-768, 769-1024, 1025-1280, 1281-->
 <div class="bodyGradient"> 
+    
 <!--Body Gradient-->
  <!--Hero-->
  <div id="hero">
@@ -18,20 +20,20 @@
       <li id="name"><strong>RENATA</strong> TRINDADE</li>
     </ul>
 <a href="#menu" id="toggle"><span></span></a>
-    <div id="menu" class="Menu" >
+    <div id="menu" class="Menu">
         <ul class="menuList">
             <li>
-              <a href="#teste" onclick="goToPortfolio()">PORTFOLIO
+              <a href="#portfolio" onclick="goToPortfolio()">PORTFOLIO
                 <div class="slider"></div>
               </a>
             </li>
             <li>
-              <a href="#teste1" onclick="goToAbout()">ABOUT ME
+              <a href="#about" onclick="goToAbout()">ABOUT ME
                 <div class="slider"></div>
               </a>
             </li>
             <li>
-              <a href="#contact" onclick="goToWork()">CONTACT
+              <a href="#footer" onclick="goToWork()">CONTACT
                 <div class="slider"></div>
               </a>
             </li>
@@ -40,14 +42,14 @@
    </nav>
     <div id="textPresentation">
       <h1 id="textHero"></h1>
-      <button class="seeMore" onclick="scrollToPage()"> See More</button>
+      <a href="#rectangle"><button class="seeMore" onclick="scrollToPage()"> See More</button></a>
+      
     </div>
     <div id="overlay" onclick="hideSlideShow()"></div>
  </div>  
   <!--Hero-->
   <!--Slideshow-->
-  <!--Slide Up   https://codepen.io/vlt5/pen/QwjbYg  
-    https://www.w3schools.com/jsref/event_onscroll.asp -->
+  <!--Slide Up   https://codepen.io/vlt5/pen/QwjbYg  -->
 
   <div id="rectangle">
   <h1 class="rectangleTitle" id="portfolio">PORTFOLIO</h1>
@@ -65,10 +67,8 @@
         <div class="title">2019</div>
         <div class="subTitle">VOLVO XC40</div>
         <p class="textPortfolio">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. 
+          Final project of my Frontend course at EDIT. I was briefed to create an advertising and marketing
+          campaign to introduce the new Volvo XC40. The Frontend department had to create a simple landing page to drive marketing leads. 
         </p>
         <div class="buttons">
           <a href="https://www.google.com" class="linkExterno">Visit Website</a>
@@ -86,9 +86,10 @@
         <div class="title-textContainer">2019</div>
         <div class="subTitle-textContainer">VOLVO XC40</div>
         <p class="text-textContainer">
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit
+          In this project not only I created the landing page with my colleague but I also was 
+          envolved with the advertising and marketing strategy because of my degree and background in marketing and advertising. 
+          The concept was to give a ride in this new model to people in strategic places where people usually need a ride (for example:airports) with the idead
+          that Volvo antecipates the necessities of people.
         </p> 
       </div>
     </div>
@@ -101,9 +102,8 @@
         <div class="title-textContainer">2019</div>
         <div class="subTitle-textContainer">VOLVO XC40</div>
         <p class="text-textContainer">
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit
+          In this landing page people can see the videos of their ride and know where will be next place where Volvo will give rides.
+          They can also subscribe and by subscribing they get a test drive. 
         </p> 
       </div>
     </div>
@@ -116,9 +116,21 @@
         <div class="title-textContainer">2019</div>
         <div class="subTitle-textContainer">VOLVO XC40</div>
           <p class="text-textContainer">
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit
+            This landing page was created by me and my frontend coworker in the course of about two weeks. We also developed this page with the design created by the UX/UI team
+            where we basically replicated the design.
+          </p> 
+      </div>
+    </div>
+    <div class="mySlides fade">
+      
+      <img class="imgSlide" src="images/service-dog-training-101.jpg">
+      
+      <div class="textContainer fade">
+        <div class="title-textContainer">2019</div>
+        <div class="subTitle-textContainer">VOLVO XC40</div>
+          <p class="text-textContainer">
+            We used github in order to share the code we developed during this time. 
+            This landing page was developed by using html5, sass, jquery and javascript. It was with great joy that we created this landing page 
           </p> 
       </div>
     </div>
@@ -132,7 +144,7 @@
   <div class="about fade" id="about">
   <h1 class="aboutTitle" >ABOUT ME</h1>
   <div class="aboutCenter">
-    <h2 class="aboutSubtitle">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </h2>
+    <h2 class="aboutSubtitle">I always had an interest in learning code but it was only recently that I had the courage to do so</h2> <!--I love music, dance, movies, dogs and recently I discovered the love for coding.-->
     <div class="aboutText">
       <p> I started my coding journey a year ago when I decided to take a 6 month course at EDIT. 
         It was the best decision I ever made and I never looked back. 

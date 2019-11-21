@@ -1,4 +1,7 @@
 /* Important styles */
+html {
+  scroll-behavior: smooth;
+}
 .bodyGradient{
   background-image: linear-gradient(180deg, rgba(103,82,123,1) 40%, rgb(197, 187, 224) 100%);
 }
@@ -80,10 +83,6 @@ nav{
   transition: width .4s;
 }
 
-.menuList li a:hover > .slider {
-  width: 100%;
-  border: 1px solid white;
-}
 
 
 @keyframes opacity {
@@ -103,6 +102,7 @@ nav{
 .seeMore{
   border: 1px solid rgba(225,214,255,1);
   border-radius: 25px;
+  cursor: pointer;
   text-decoration: none;
   font-family: 'LightFont';
   color: rgba(225,214,255,1);
@@ -121,7 +121,7 @@ nav{
     width: 28px;
     height: 30px;
     margin: 30px 30px 10px;
-    display: none;
+    /*display: none;*/
     float: right;
     z-index: 2;
     display: flex;
@@ -192,10 +192,7 @@ nav{
     z-index: 1;
   }
   
-  .menuList li a:hover > .slider {
-    width: 100%;
-    border: 1px solid black;
-  }
+  
 }
 @media only screen and (min-width: 0) and (max-width: 480px){
   #textHero{
@@ -216,7 +213,7 @@ nav{
     display: inline-block;
   }
   .menuList, li a{
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
@@ -237,7 +234,7 @@ nav{
     display: inline-block;
   }
   .menuList, li a{
-    font-size: 22px;
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -254,6 +251,10 @@ nav{
   }
   .menuList, li a{
     font-size: 25px;
+  }
+  .menuList li a:hover > .slider {
+    width: 100%;
+    border: 1px solid white;
   }
 }
 
@@ -272,6 +273,10 @@ nav{
   .menuList, li a{
     font-size: 30px;
   }
+  .menuList li a:hover > .slider {
+    width: 100%;
+    border: 1px solid white;
+  }
 }
 @media only screen and (min-width: 1281px){
   #textHero{
@@ -287,6 +292,10 @@ nav{
   }
   .menuList, li a{
     font-size: 35px;
+  }
+  .menuList li a:hover > .slider {
+    width: 100%;
+    border: 1px solid white;
   }
 }
 
@@ -487,9 +496,9 @@ nav{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
@@ -539,7 +548,7 @@ nav{
   }
   .linkExterno, .popUp{
     font-size: 15px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 25px 10px 25px;
   }
   .imgSlide{
     width: 100%;
@@ -556,6 +565,7 @@ nav{
     font-size: 15px;
     padding-bottom: 20px;
     text-align: justify;
+    line-height: 1.5;
   }
   .prev{
     left: 40%;
@@ -618,6 +628,7 @@ nav{
     font-size: 18px;
     padding-bottom: 30px;
     text-align: justify;
+    line-height: 1.5;
   }
   .prev{
     left: 40%;
@@ -682,6 +693,8 @@ nav{
     font-size: 20px;
     padding-bottom: 30px;
     text-align: justify;
+    line-height: 1.5;
+
   }
   .prev{
     left: 45%;
@@ -736,6 +749,8 @@ nav{
   .text-textContainer{
     transform: translateY(0%);
     font-size: 21px;
+    line-height: 1.5;
+
   }
   .prev{
     left: 45%;
@@ -791,14 +806,15 @@ nav{
     width: 50%;
   }
   .textContainer{
-    width: 45%;
+    width: 30%;
     text-align: left;
     margin-left: 20px;
+    
   }
   .text-textContainer{
     transform: translateY(0%);
     font-size: 23px;
-    
+    line-height: 1.5;
   }
   .prev{
     left: 45%;
@@ -876,6 +892,9 @@ nav{
     .specialSkills{
       font-size:20px;
       }
+    .iconsGroup{
+      padding-bottom: 15px;
+    }
     .icons{
       width: 45px;
       margin: 8px;
@@ -896,7 +915,10 @@ nav{
     }
     .specialSkills{
       font-size:40px;
-      }
+    }
+    .iconsGroup{
+      padding-bottom: 20px;
+    }
     .icons{
       width: 65px;
       margin: 10px;
@@ -939,7 +961,7 @@ nav{
     }
     .aboutText{
       font-size:28px;
-      max-width: 80%;
+      max-width: 90%;
       margin: 0 auto;
     }
     .specialSkills{
@@ -1014,10 +1036,12 @@ nav{
   @media only screen and (min-width:0px) and (max-width:480px){
     .footer{
       display: block;
+      height: auto;
+      padding-bottom: 25px;
     }
     .footer-container-left{
-      padding-top: 30px;
-      margin-left: 30px;
+      padding-top: 25px;
+      margin-left: 25px;
     }
     .letsWork{
       font-size: 35px;
@@ -1038,10 +1062,13 @@ nav{
   @media only screen and (min-width:481px) and (max-width:768px){
     .footer{
       display: block;
+      height: auto;
+      padding-bottom: 35px;
+
     }
     .footer-container-left{
       width: 301px;
-      padding-top: 40px;
+      padding-top: 35px;
       margin-left: 50px;
     }
     .letsWork{
@@ -1052,14 +1079,13 @@ nav{
       margin-left: 40px;
     }
     .icon-contact{
-      margin: 10px;
+      margin: 10px 5px 10px 0;
       width: 30px;
     }
     .email,.phone{
       font-size: 25px;
       margin: 0px;
     }
-    
   }
   @media only screen and (min-width:769px) and (max-width:1024px){
       .footer{
