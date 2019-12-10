@@ -1140,8 +1140,6 @@ nav{
     width: max-content;
   }
   .icon-contact{
-   width: 30px;
-    margin: 20px;
     vertical-align: middle;
   }
   .email,.phone{
@@ -1171,7 +1169,7 @@ nav{
     }
     .icon-contact{
       margin: 5px;
-      width: 22px;
+      width: 12px;
     }
     .email,.phone{
       font-size: 18px;
@@ -1195,11 +1193,11 @@ nav{
     }
     .contacts{
       margin: 10px;
-      margin-left: 40px;
+      margin-left: 5gi0px;
     }
     .icon-contact{
       margin: 10px 5px 10px 0;
-      width: 30px;
+      width: 15px;
     }
     .email,.phone{
       font-size: 25px;
@@ -1225,7 +1223,7 @@ nav{
       }
       .icon-contact{
         margin: 5px;
-        width: 40px;
+        width: 20px;
       }
       .email, .phone{
         font-size: 25px;
@@ -1249,7 +1247,7 @@ nav{
       }
       .icon-contact{
         margin: 10px;
-        width: 45px;
+        width: 30px;
       }
       .email, .phone{
         font-size: 30px;
@@ -1273,7 +1271,7 @@ nav{
       }
       .icon-contact{
         margin: 10px;
-        width: 55px;
+        width: 35px;
       }
       .email, .phone{
         font-size: 35px;
