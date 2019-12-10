@@ -42,7 +42,7 @@
    </nav>
     <div id="textPresentation">
       <h1 id="textHero"></h1>
-      <a href="#rectangle"><button class="seeMore" onclick="scrollToPage()"> See More</button></a>
+      <a href="#rectangle"><button class="seeMore"> See More</button></a>
       
     </div>
     <div id="overlay" onclick="hideSlideShow()"></div>
@@ -57,7 +57,7 @@
   <div class="division1">
     <div class="centerDivision1">
       <div class="picture">
-        <img src="images/CTT.png" alt="" class="imgCTT">
+        <img src="images/img-1.png" alt="" class="imgCTT">
       </div>
     </div>
   </div>
@@ -70,8 +70,8 @@
           Final project of my Frontend course at EDIT. I was briefed to create an advertising and marketing
           campaign to introduce the new Volvo XC40. The Frontend department had to create a simple landing page to drive marketing leads. 
         </p>
-        <div class="buttons">
-          <a href="https://www.google.com" class="linkExterno">Visit Website</a>
+        <div class="buttons"><!--Não é preciso criá-los no objecto json mas sim no javascript pois serão sempre iguais-->
+          <a href="https://www.google.com" class="linkExterno">Visit Website</a> 
           <a href="#popUp" class="popUp" onclick="showSlideShow()">Case Study</a>
         </div>
     </div>
@@ -81,10 +81,11 @@
 
   <div class="slideshow-container fade">
     <div class="mySlides fade">
-      <img class="imgSlide" src="images/service-dog-training-101.jpg">
+      <img class="icon-close" src="icons/icone-fechar.svg" onclick="hideSlideShow()"> <!--Não é preciso criá-los no objecto json mas sim no javascript pois serão sempre iguais-->
+      <img class="imgSlide" src="images/img-3.png">
       <div class="textContainer fade">
-        <div class="title-textContainer">2019</div>
-        <div class="subTitle-textContainer">VOLVO XC40</div>
+        <div class="title-textContainer">2019</div> <!--N é preciso criar object json pois vai ser igual ao title da division2-->
+        <div class="subTitle-textContainer">VOLVO XC40</div> <!--N é preciso criar object json pois vai ser igual ao subtitle da division2-->
         <p class="text-textContainer">
           In this project not only I created the landing page with my colleague but I also was 
           envolved with the advertising and marketing strategy because of my degree and background in marketing and advertising. 
@@ -95,47 +96,73 @@
     </div>
     
     <div class="mySlides fade">
-      
-      <img class="imgSlide" src="images/service-dog-training-101.jpg">
+      <img src="icons/icone-fechar.svg" alt="" class="icon-close" onclick="hideSlideShow()"> 
+      <img class="imgSlide" src="images/img-4.png">
       
       <div class="textContainer fade">
         <div class="title-textContainer">2019</div>
         <div class="subTitle-textContainer">VOLVO XC40</div>
+        
         <p class="text-textContainer">
-          In this landing page people can see the videos of their ride and know where will be next place where Volvo will give rides.
-          They can also subscribe and by subscribing they get a test drive. 
+          In this landing page people can see the videos of their ride and know where will be next place where Volvo will give rides. 
+          They can also subscribe and by subscribing they get a test drive. This landing page was created by me and my frontend coworker in the course of about two weeks.
         </p> 
       </div>
     </div>
     
     <div class="mySlides fade">
-      
-      <img class="imgSlide" src="images/service-dog-training-101.jpg">
-      
-      <div class="textContainer fade">
-        <div class="title-textContainer">2019</div>
-        <div class="subTitle-textContainer">VOLVO XC40</div>
-          <p class="text-textContainer">
-            This landing page was created by me and my frontend coworker in the course of about two weeks. We also developed this page with the design created by the UX/UI team
-            where we basically replicated the design.
-          </p> 
-      </div>
-    </div>
-    <div class="mySlides fade">
-      
-      <img class="imgSlide" src="images/service-dog-training-101.jpg">
+      <img src="icons/icone-fechar.svg" alt="" class="icon-close" onclick="hideSlideShow()">
+      <img class="imgSlide" src="images/img-5.png">
       
       <div class="textContainer fade">
         <div class="title-textContainer">2019</div>
         <div class="subTitle-textContainer">VOLVO XC40</div>
+        
           <p class="text-textContainer">
-            We used github in order to share the code we developed during this time. 
-            This landing page was developed by using html5, sass, jquery and javascript. It was with great joy that we created this landing page 
+            We developed this page with the design created by the UX/UI team where we basically replicated the design.
+            We used github in order to share the code we developed during this time. This landing page was developed by using html5, sass, jquery and javascript. 
+            It was with great joy that we created this landing page
+
           </p> 
       </div>
     </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 1000 707.62" style="enable-background:new 0 0 1000 707.62;" xml:space="preserve"><g>
+            <g>
+              <path class="st0" d="M765.3,707.62H234.7C105.28,707.62,0,602.33,0,472.93V234.7C0,105.29,105.28,0,234.7,0h530.6
+                C894.72,0,1000,105.29,1000,234.7v238.23C1000,602.33,894.72,707.62,765.3,707.62z M234.7,25.32
+                c-115.45,0-209.38,93.93-209.38,209.39v238.23c0,115.45,93.93,209.37,209.38,209.37h530.6c115.45,0,209.38-93.93,209.38-209.37
+                V234.7c0-115.46-93.93-209.39-209.38-209.39H234.7z"/>
+            </g>
+            <g>
+              <path class="st0" d="M631.05,522.31L301.83,350.36L631.05,189V522.31z M357.88,351.08l247.86,129.45V229.61L357.88,351.08z"/>
+            </g>
+          </g>
+          </svg>
+      </a> 
+      <a class="next" onclick="plusSlides(1)"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 1000 707.62" style="enable-background:new 0 0 1000 707.62;" xml:space="preserve"><g>
+            <g>
+              <path class="st0" d="M765.3,707.62H234.7C105.28,707.62,0,602.33,0,472.93V234.7C0,105.29,105.28,0,234.7,0h530.6
+                C894.72,0,1000,105.29,1000,234.7v238.23C1000,602.33,894.72,707.62,765.3,707.62z M234.7,25.32
+                c-115.45,0-209.38,93.93-209.38,209.39v238.23c0,115.45,93.93,209.37,209.38,209.37h530.6c115.45,0,209.38-93.93,209.38-209.37
+                V234.7c0-115.46-93.93-209.39-209.38-209.39H234.7z"/>
+            </g>
+            <g>
+              <path class="st0" d="M368.95,518.63V185.32l329.23,171.95L368.95,518.63z M394.26,227.1v250.93l247.86-121.47L394.26,227.1z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              
+                <rect x="392.25" y="-387.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 375.469 170.2598)" class="st1" width="2.01" height="38.59"/>
+            </g>
+            <g>
+              
+                <rect x="373.98" y="-369.23" transform="matrix(0.7071 -0.7071 0.7071 0.7071 375.5431 170.1955)" class="st1" width="38.48" height="2.01"/>
+            </g>
+          </g>
+          </svg></a>
   </div>
 </div>
 
@@ -144,12 +171,13 @@
   <div class="about fade" id="about">
   <h1 class="aboutTitle" >ABOUT ME</h1>
   <div class="aboutCenter">
-    <h2 class="aboutSubtitle">I always had an interest in learning code but it was only recently that I had the courage to do so</h2> <!--I love music, dance, movies, dogs and recently I discovered the love for coding.-->
+    <h2 class="aboutSubtitle">Frontend developer exploring the awesome world of tech.</h2> 
     <div class="aboutText">
-      <p> I started my coding journey a year ago when I decided to take a 6 month course at EDIT. 
+      <p>I started my coding journey a year ago when I decided to take a Frontend development course at EDIT. 
         It was the best decision I ever made and I never looked back. 
-        I've been working in the industry for 6 months and what I love the most is to create and build something new and from scratch. 
-        I'm a self taught and I haven't stopped learning adn will ever stop. What I'm looking right now is to learn even more and be a better self tomorrow that I was yesterday</p>
+        I've been working in the industry for almost a year now and what I love most is to create and build something from scratch. 
+        For the most part I’m self-taught and I enjoy constantly learning more to improve my skills. I love collaborating with others to create delightful web experiences.
+      I bring to the table both a dedication and a yearning that, I think, is unique – and I hope we get to work together, so that, maybe, you can feel the same.</p>
       </div>
       <h2 class="specialSkills">Special Skills</h2> 
       <div class="iconsGroup">

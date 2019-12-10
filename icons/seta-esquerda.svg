@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 707.62" style="enable-background:new 0 0 1000 707.62;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D2C1FF;}
+
+	#Layer_1:hover{
+		fill: red;
+	}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M765.3,707.62H234.7C105.28,707.62,0,602.33,0,472.93V234.7C0,105.29,105.28,0,234.7,0h530.6
+			C894.72,0,1000,105.29,1000,234.7v238.23C1000,602.33,894.72,707.62,765.3,707.62z M234.7,25.32
+			c-115.45,0-209.38,93.93-209.38,209.39v238.23c0,115.45,93.93,209.37,209.38,209.37h530.6c115.45,0,209.38-93.93,209.38-209.37
+			V234.7c0-115.46-93.93-209.39-209.38-209.39H234.7z"/>
+	</g>
+	<g>
+		<path class="st0" d="M631.05,522.31L301.83,350.36L631.05,189V522.31z M357.88,351.08l247.86,129.45V229.61L357.88,351.08z"/>
+	</g>
+</g>
+</svg>

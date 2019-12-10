@@ -50,9 +50,9 @@ nav{
 
 #textHero{
   margin: 30px 30px;
-  font-size:60px;
-  font-family: 'LightFont';
+  font-family: 'ExtraLightFont';
   color: white;
+  letter-spacing: 1px;
 }
 
 .info{
@@ -62,7 +62,9 @@ nav{
   font-family: 'LightFont';
 
 }
-
+#name{
+  letter-spacing: 4px;
+}
 .menuList{
   float: right;
 }
@@ -75,6 +77,7 @@ nav{
   margin: 10px;
   color: white;
   font-family: 'Lightfont';
+  letter-spacing: 4px;
 }
 
 .slider {
@@ -180,7 +183,7 @@ nav{
     width: 100%;
     height: 100%;
     margin: auto;
-    font-family: 'LightFont';
+    font-family: 'SemiBoldFont';
     text-align: center;
     border-radius: 4px;
     background-image: linear-gradient(180deg, rgba(103,82,123,1) 40%, rgba(225,214,255,1) 100%);
@@ -233,6 +236,7 @@ nav{
     margin: auto 30% ;
     display: inline-block;
   }
+  
   .menuList, li a{
     font-size: 30px;
   }
@@ -244,13 +248,22 @@ nav{
     margin: 30px 40px;
   }
   #name{
-    font-size: 25px;
+    font-size: 24px;
+    letter-spacing: 3px;
   }
   .seeMore{
     font-size: 30px;
   }
+  .menuList{
+    margin-top: 15px;
+  }
+  
   .menuList, li a{
-    font-size: 25px;
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .menuList, li, li a {
+    margin: 10px 5px 10px 5px;
   }
   .menuList li a:hover > .slider {
     width: 100%;
@@ -265,13 +278,13 @@ nav{
     margin: 30px 40px;
   }
   #name{
-    font-size: 30px;
+    font-size: 28px;
   }
   .seeMore{
     font-size: 35px;
   }
   .menuList, li a{
-    font-size: 30px;
+    font-size: 28px;
   }
   .menuList li a:hover > .slider {
     width: 100%;
@@ -280,18 +293,20 @@ nav{
 }
 @media only screen and (min-width: 1281px){
   #textHero{
-    font-size: 60px;
+    font-size: 55px;
     line-height: 1.5;
     margin: 30px 100px;
   }
   #name{
-    font-size: 35px;
+    font-size: 32px;
+   
   }
   .seeMore{
-    font-size: 40px;
+    font-size: 37px;
   }
   .menuList, li a{
-    font-size: 35px;
+    font-size: 32px;
+    
   }
   .menuList li a:hover > .slider {
     width: 100%;
@@ -307,11 +322,12 @@ nav{
 .rectangleTitle{
   margin: 0 auto;
   color: white;
-  font-size: 60px;
   font-family: 'SemiBoldFont';
   text-align: center;
   width: max-content;
   border-bottom: 1px solid white;
+  letter-spacing: 5px;
+  padding-top: 10px;
 }
 .division1{
   float: left;
@@ -329,6 +345,8 @@ nav{
 .imgCTT{
   max-width: 100%;
   height: auto;
+  box-shadow: 0 3px 5px gray;
+  border-radius: 15px;
 }
 
 .text-textContainer{
@@ -360,8 +378,8 @@ nav{
   color: rgb(197, 187, 224);
 }
 .popUp{
-  border: 1px solid rgb(40, 35, 54);
-  color: rgb(40, 35, 54);
+  border: 1px solid #303044;
+  color:#303044
 }
 .division1{
   width: 50%;
@@ -399,14 +417,15 @@ nav{
 
 
   /*Slideshow*/
-.imgSlide {
+.imgSlide { 
   vertical-align: middle; 
   float: right;
   width:50%;
   padding: 8px 12px 70px;
   max-width: 100%;
   height: auto;
-}
+  max-height: 1000px;
+} /*ter em conta responsive */
 
 #overlay, .slideshow-container {
   position: absolute;
@@ -447,13 +466,13 @@ nav{
   cursor: pointer;
   position: absolute;
   top: 92%;
-  width: auto;
-  color: black;
+  width: 50px;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
+  fill:#D2C1FF;
+  padding-top: 10px;
 }
 
 /* Position the "next button" to the right */
@@ -467,7 +486,7 @@ nav{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  fill:#67527B;
 }
 
 /* Caption text */
@@ -488,6 +507,12 @@ nav{
 .subTitle-textContainer{
   font-family: 'BoldFont';
   color: rgb(103,82,123,1);
+}
+.icon-close{
+  width: 20px;
+  padding: 0 20px 20px 0;
+  float: right;
+  cursor: pointer;
 }
 .text-textContainer{
   font-family: 'LightFont';
@@ -534,6 +559,9 @@ nav{
     font-size: 16px;
     text-align: left;
   }
+  .title-textContainer{
+    padding-top: 15px;
+  }
   .subTitle, .subTitle-textContainer{
     font-size: 20px;
     text-align: left;
@@ -567,11 +595,14 @@ nav{
     text-align: justify;
     line-height: 1.5;
   }
+  .prev, .next{
+    top: 90%;
+  }
   .prev{
-    left: 40%;
+    left: 33%;
   }
   .next{
-    right: 40%;
+    right: 33%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
@@ -594,7 +625,9 @@ nav{
     font-size: 25px;
     text-align: left;
   }
-  
+  .title-textContainer{
+    padding-top: 15px;
+  }
   .subTitle, .subTitle-textContainer{
     font-size: 30px;
     text-align: left;
@@ -631,10 +664,10 @@ nav{
     line-height: 1.5;
   }
   .prev{
-    left: 40%;
+    left: 38%;
   }
   .next{
-    right: 40%;
+    right: 38%;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -652,6 +685,9 @@ nav{
   .rectangleTitle{
     font-size: 45px;
     padding-top: 10px;;
+  }
+  .title-textContainer{
+    padding-top: 15px;
   }
   .title, .title-textContainer{
     font-size: 30px;
@@ -678,7 +714,7 @@ nav{
   .imgSlide{
     width: 100%;
     padding: 0;
-    margin-bottom: 15px;
+    
   }
   .textContainer{
     width: 100%;
@@ -696,11 +732,14 @@ nav{
     line-height: 1.5;
 
   }
+  .prev, .next{
+    padding-top: 20px;
+  }
   .prev{
-    left: 45%;
+    left: 42%;
   }
   .next{
-    right: 45%;
+    right: 42%;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px){
@@ -735,11 +774,15 @@ nav{
     margin-right: 25px;
   }
   .slideshow-container{
-    height: 80%;
+    height: 65%;
     width: 90%;
   }
   .imgSlide{
-    width: 50%;
+    padding: 0;
+    width: 75%;
+    position: fixed;
+    bottom: 7px;
+    left: 28%;
   }
   .textContainer{
     width: 30%;
@@ -753,13 +796,14 @@ nav{
 
   }
   .prev{
-    left: 45%;
+    left: 43%;
+   
   }
   .next{
-    right: 45%;
+    right: 43%;
   }
 }
-@media only screen and (min-width: 1281px){
+@media only screen and (min-width: 1281px) and (max-width: 14000px){
   .division1{
     width: 50%;
     
@@ -799,11 +843,16 @@ nav{
     
   }
   .slideshow-container{
-    height: 80%;
-    width: 90%;
+    height: 65%;
+    width: 85%;
   }
   .imgSlide{
-    width: 50%;
+    padding: 0;
+    width: 75%;
+    position: fixed;
+    bottom: 0px;
+    left: 28%;
+    background-size: contain;
   }
   .textContainer{
     width: 30%;
@@ -824,6 +873,76 @@ nav{
   }
 }
 /*ABOUT*/    
+
+@media only screen and (min-width: 1401px){
+  .division1{
+    width: 50%;
+    
+  }
+  .division2{
+    width: 50%;
+    
+  }
+  .centerDivision2{
+    max-width: 90%;
+  }
+  .rectangleTitle{
+    font-size: 50px;
+    padding-top: 10px;
+  }
+  .title,.title-textContainer{
+    font-size: 30px;
+  }
+  
+  .subTitle, .subTitle-textContainer{
+    font-size: 45px;
+  }
+   
+  .textPortfolio{
+    font-size: 27px;
+    margin-top: 0;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+.linkExterno{
+  text-align: left;
+  margin-right: 40px;
+}
+  .linkExterno, .popUp{
+    font-size: 27px;
+    padding: 10px 60px 10px 60px;
+    
+  }
+  .slideshow-container{
+    height: 70%;
+    width: 72%;
+  }
+  .imgSlide{
+    padding: 0;
+    width: 75%;
+    position: fixed;
+    bottom: 0px;
+    left: 28%;
+    background-size: contain;
+  }
+  .textContainer{
+    width: 30%;
+    text-align: left;
+    margin-left: 20px;
+    
+  }
+  .text-textContainer{
+    transform: translateY(0%);
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .prev{
+    left: 45%;
+  }
+  .next{
+    right: 45%;
+  }
+}
 
 
 .about{
@@ -951,13 +1070,13 @@ nav{
   }
   @media only screen and (min-width:1025px) and (max-width:1280px){
     .aboutTitle{
-      font-size: 55px;
+      font-size: 40px;
     }
     .aboutCenter{
       max-width: 85%;
     }
     .aboutSubtitle{
-      font-size:40px;
+      font-size:35px;
     }
     .aboutText{
       font-size:28px;
