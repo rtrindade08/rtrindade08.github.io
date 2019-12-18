@@ -217,6 +217,7 @@ nav{
   }
   .menuList, li a{
     font-size: 25px;
+    font-family: 'SemiBoldFont';
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
@@ -239,6 +240,7 @@ nav{
   
   .menuList, li a{
     font-size: 30px;
+    font-family: 'SemiBoldFont';
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
