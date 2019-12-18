@@ -541,6 +541,9 @@ nav{
     width: 100%;
     height: 45%;
   }
+  .imgCTT {
+    max-width: 95%;
+  }
   .division2{
     width: 100%;
     height: 40%;
@@ -610,6 +613,13 @@ nav{
     width: 100%;
     height: 45%;
   }
+  .centerDivision1{
+    top: 60%;
+    
+  }
+  .imgCTT{
+    max-width: 90%;
+  }
   .division2{
     width: 100%;
     height: 40%;
@@ -675,16 +685,24 @@ nav{
     width: 100%;
     height: 45%;
   }
+  .centerDivision1{
+    text-align: left;
+    max-width: 85%;
+  }
+  .imgCTT{
+    max-width: 95%;
+  }
   .division2{
     width: 100%;
-    height: 40%;
+    height: 35%;
   }
   .centerDivision2{
     max-width: 85%;
   }
   .rectangleTitle{
     font-size: 45px;
-    padding-top: 10px;;
+    padding-top: 10px;
+    margin-bottom: 30px;
   }
   .title-textContainer{
     padding-top: 15px;
@@ -702,7 +720,7 @@ nav{
     margin-top: 10;
     line-height: 1.5;
     text-align: justify;
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
   }
   .linkExterno{
     margin-right: 50px;
@@ -779,7 +797,7 @@ nav{
   }
   .imgSlide{
     padding: 0;
-    width: 75%;
+    width: 71%;
     position: fixed;
     bottom: 7px;
     left: 28%;
@@ -791,7 +809,7 @@ nav{
   }
   .text-textContainer{
     transform: translateY(0%);
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.5;
 
   }
@@ -801,6 +819,9 @@ nav{
   }
   .next{
     right: 43%;
+  }
+  .prev, .next{
+    top: 90%;
   }
 }
 @media only screen and (min-width: 1281px) and (max-width: 14000px){
@@ -843,26 +864,25 @@ nav{
     
   }
   .slideshow-container{
-    height: 65%;
+    height: 70%;
     width: 85%;
   }
   .imgSlide{
     padding: 0;
-    width: 75%;
+    width: 69%;
     position: fixed;
-    bottom: 0px;
-    left: 28%;
-    background-size: contain;
+    bottom: 20px;
+    left: 30%;
   }
   .textContainer{
-    width: 30%;
+    width: 29%;
     text-align: left;
     margin-left: 20px;
     
   }
   .text-textContainer{
     transform: translateY(0%);
-    font-size: 23px;
+    font-size: 22px;
     line-height: 1.5;
   }
   .prev{
@@ -870,6 +890,9 @@ nav{
   }
   .next{
     right: 45%;
+  }
+  .prev, .next{
+    top: 90%;
   }
 }
 /*ABOUT*/    
@@ -914,16 +937,15 @@ nav{
     
   }
   .slideshow-container{
-    height: 70%;
-    width: 72%;
+    height: 71%;
+    width: 80%;
   }
   .imgSlide{
     padding: 0;
-    width: 75%;
+    width: 71%;
     position: fixed;
-    bottom: 0px;
-    left: 28%;
-    background-size: contain;
+    bottom: 22px;
+    left: 29%;
   }
   .textContainer{
     width: 30%;
@@ -933,7 +955,7 @@ nav{
   }
   .text-textContainer{
     transform: translateY(0%);
-    font-size: 25px;
+    font-size: 24px;
     line-height: 1.5;
   }
   .prev{
