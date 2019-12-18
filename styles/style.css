@@ -415,6 +415,7 @@ nav{
 .textPortfolio{
   color: white;
   font-family: 'Lightfont';
+  text-align: justify;
 }
 
 
@@ -1004,6 +1005,7 @@ nav{
     font-family: 'LightFont';
     font-size: 32px;
     line-height: 1.5;
+    text-align: justify;
   }
   .specialSkills{
     font-family: 'LightItalicFont';
