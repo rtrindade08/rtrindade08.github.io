@@ -17,7 +17,7 @@
  <div id="hero">
    <nav>
     <ul class="info"> 
-      <li id="name"><strong>RENATA</strong> TRINDADE</li>
+      <li id="name"><strong>RENATA</bold> TRINDADE</li>
     </ul>
 <a href="#menu" id="toggle"><span></span></a>
     <div id="menu" class="Menu">
@@ -77,9 +77,20 @@
     </div>
   </div>
 
- 
-
   <div class="slideshow-container fade">
+    <div class="mySlides fade">
+      <img class="icon-close" src="icons/icone-fechar.svg" onclick="hideSlideShow()"> <!--Não é preciso criá-los no objecto json mas sim no javascript pois serão sempre iguais-->
+      <img class="imgSlide" src="images/img-2.png">
+      <div class="textContainer fade">
+        <div class="title-textContainer">2019</div> <!--N é preciso criar object json pois vai ser igual ao title da division2-->
+        <div class="subTitle-textContainer">VOLVO XC40</div> <!--N é preciso criar object json pois vai ser igual ao subtitle da division2-->
+        <p class="text-textContainer">
+          In this project not only I created the landing page with my colleague but I also was 
+          envolved with the advertising and marketing strategy because of my degree and background in marketing and advertising. 
+        </p> 
+      </div>
+    </div>
+
     <div class="mySlides fade">
       <img class="icon-close" src="icons/icone-fechar.svg" onclick="hideSlideShow()"> <!--Não é preciso criá-los no objecto json mas sim no javascript pois serão sempre iguais-->
       <img class="imgSlide" src="images/img-3.png">
@@ -87,8 +98,6 @@
         <div class="title-textContainer">2019</div> <!--N é preciso criar object json pois vai ser igual ao title da division2-->
         <div class="subTitle-textContainer">VOLVO XC40</div> <!--N é preciso criar object json pois vai ser igual ao subtitle da division2-->
         <p class="text-textContainer">
-          In this project not only I created the landing page with my colleague but I also was 
-          envolved with the advertising and marketing strategy because of my degree and background in marketing and advertising. 
           The concept was to give a ride in this new model to people in strategic places where people usually need a ride (for example:airports) with the idead
           that Volvo antecipates the necessities of people.
         </p> 
