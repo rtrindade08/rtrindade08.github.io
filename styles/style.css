@@ -316,12 +316,12 @@ nav{
   }
 }
 
-/*--RECTANGLE--*/
-#rectangle{
+/*--Portfolio--*/
+.portfolio{
   height: 100vh;
   position: relative;
 }
-.rectangleTitle{
+.portfolio-title{
   margin: 0 auto;
   color: white;
   font-family: 'SemiBoldFont';
@@ -331,7 +331,7 @@ nav{
   letter-spacing: 5px;
   padding-top: 10px;
 }
-.division1{
+.portfolio--container-right{
   float: left;
 }
 
@@ -383,7 +383,7 @@ nav{
   border: 1px solid #303044;
   color:#303044
 }
-.division1{
+.portfolio--container-right{
   width: 50%;
   height: 92%;
 }
@@ -540,7 +540,7 @@ nav{
 }
 /*RESPONSIVE */
 @media only screen and (min-width: 0) and (max-width: 480px){
-  .division1{
+  .portfolio--container-right{
     width: 100%;
     height: 45%;
   }
@@ -551,7 +551,7 @@ nav{
     width: 100%;
     height: 40%;
   }
-  .rectangleTitle{
+  .portfolio-title{
     font-size: 30px;
     padding-top:10px;
   }
@@ -612,7 +612,7 @@ nav{
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
-  .division1{
+  .portfolio--container-right{
     width: 100%;
     height: 45%;
   }
@@ -630,7 +630,7 @@ nav{
   .centerDivision2{
     max-width: 85%;
   }
-  .rectangleTitle{
+  .portfolio-title{
     font-size: 35px;
     padding-top:10px;
   }
@@ -684,7 +684,7 @@ nav{
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-  .division1{
+  .portfolio--container-right{
     width: 100%;
     height: 45%;
   }
@@ -702,7 +702,7 @@ nav{
   .centerDivision2{
     max-width: 85%;
   }
-  .rectangleTitle{
+  .portfolio-title{
     font-size: 45px;
     padding-top: 10px;
     margin-bottom: 30px;
@@ -764,7 +764,7 @@ nav{
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px){
-  .division1{
+  .portfolio--container-right{
     width: 50%;
   }
   .division2{
@@ -773,7 +773,7 @@ nav{
   .centerDivision2{
     max-width: 90%;
   }
-  .rectangleTitle{
+  .portfolio-title{
     font-size: 40px;
     padding-top: 10px;
   }
@@ -828,7 +828,7 @@ nav{
   }
 }
 @media only screen and (min-width: 1281px) and (max-width: 1400px){
-  .division1{
+  .portfolio--container-right{
     width: 50%;
     
   }
@@ -839,7 +839,7 @@ nav{
   .centerDivision2{
     max-width: 90%;
   }
-  .rectangleTitle{
+  .portfolio-title{
     font-size: 50px;
     padding-top: 10px;
   }
@@ -901,7 +901,7 @@ nav{
 /*ABOUT*/    
 
 @media only screen and (min-width: 1401px){
-  .division1{
+  .portfolio--container-right{
     width: 50%;
     
   }
@@ -912,7 +912,7 @@ nav{
   .centerDivision2{
     max-width: 90%;
   }
-  .rectangleTitle{
+  .portfolio-title{
     font-size: 50px;
     padding-top: 10px;
   }
