@@ -38,7 +38,7 @@ nav{
   position: relative;
   height: 100vh;
 }
-#textPresentation{
+.hero-textPresentation{
   margin: 0 auto;
   width: 100%;
   text-align: center;
@@ -48,14 +48,14 @@ nav{
   position: absolute;
 }
 
-#textHero{
+.hero-textPresentation-text{
   margin: 30px 30px;
   font-family: 'ExtraLightFont';
   color: white;
   letter-spacing: 1px;
 }
 
-.info{
+.hero-name{
   float: left;
   list-style: none;
   margin: 20px 0 20px 0;
@@ -65,11 +65,11 @@ nav{
 #name{
   letter-spacing: 4px;
 }
-.menuList{
+.hero--nav--menu-menuList{
   float: right;
 }
 
-.menuList, li, li a {
+.hero--nav--menu-menuList, li, li a {
   list-style: none;
   display: inline-block;
   padding: 0;
@@ -80,7 +80,7 @@ nav{
   letter-spacing: 4px;
 }
 
-.slider {
+.hero--nav--menu--menuList-slider {
   left: 0;
   width: 0%;
   transition: width .4s;
@@ -102,7 +102,7 @@ nav{
 }
 
 
-.seeMore{
+.hero--textPresentation-btn{
   border: 1px solid rgba(225,214,255,1);
   border-radius: 25px;
   cursor: pointer;
@@ -179,7 +179,7 @@ nav{
   }
   
   /* menu appearance*/
-  .Menu {
+  .hero--nav-menu {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -198,7 +198,7 @@ nav{
   
 }
 @media only screen and (min-width: 0) and (max-width: 480px){
-  #textHero{
+  .hero-textPresentation-text{
     font-size: 30px;
     line-height: 1.5;
     margin: 30px 40px;
@@ -207,21 +207,21 @@ nav{
     margin: 0;
     font-size: 20px;
   }
-  .seeMore{
+  .hero--textPresentation-btn{
     font-size: 20px;
   }
-  .menuList{
+  .hero--nav--menu-menuList{
     text-align: center;
     margin: auto 22% ;
     display: inline-block;
   }
-  .menuList, li a{
+  .hero--nav--menu-menuList, li a{
     font-size: 25px;
     font-family: 'SemiBoldFont';
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
-  #textHero{
+  .hero-textPresentation-text{
     font-size: 40px;
     line-height: 1.5;
   }
@@ -229,22 +229,22 @@ nav{
     margin: 0;
     font-size: 22px;
   }
-  .seeMore{
+  .hero--textPresentation-btn{
     font-size: 25px;
   }
-  .menuList{
+  .hero--nav--menu-menuList{
     text-align: center;
     margin: auto 30% ;
     display: inline-block;
   }
   
-  .menuList, li a{
+  .hero--nav--menu-menuList, li a{
     font-size: 30px;
     font-family: 'SemiBoldFont';
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-  #textHero{
+  .hero-textPresentation-text{
     font-size: 45px;
     line-height: 1.5;
     margin: 30px 40px;
@@ -253,28 +253,28 @@ nav{
     font-size: 24px;
     letter-spacing: 3px;
   }
-  .seeMore{
+  .hero--textPresentation-btn{
     font-size: 30px;
   }
-  .menuList{
+  .hero--nav--menu-menuList{
     margin-top: 15px;
   }
   
-  .menuList, li a{
+  .hero--nav--menu-menuList, li a{
     font-size: 24px;
     letter-spacing: 3px;
   }
-  .menuList, li, li a {
+  .hero--nav--menu-menuList, li, li a {
     margin: 10px 5px 10px 5px;
   }
-  .menuList li a:hover > .slider {
+  .hero--nav--menu-menuList li a:hover > .hero--nav--menu--menuList-slider {
     width: 100%;
     border: 1px solid white;
   }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px){
-  #textHero{
+  .hero-textPresentation-text{
     font-size: 55px;
     line-height: 1.5;
     margin: 30px 40px;
@@ -282,19 +282,19 @@ nav{
   #name{
     font-size: 28px;
   }
-  .seeMore{
+  .hero--textPresentation-btn{
     font-size: 35px;
   }
-  .menuList, li a{
+  .hero--nav--menu-menuList, li a{
     font-size: 28px;
   }
-  .menuList li a:hover > .slider {
+  .hero--nav--menu-menuList li a:hover > .hero--nav--menu--menuList-slider {
     width: 100%;
     border: 1px solid white;
   }
 }
 @media only screen and (min-width: 1281px){
-  #textHero{
+  .hero-textPresentation-text{
     font-size: 55px;
     line-height: 1.5;
     margin: 30px 100px;
@@ -303,14 +303,14 @@ nav{
     font-size: 32px;
    
   }
-  .seeMore{
+  .hero--textPresentation-btn{
     font-size: 37px;
   }
-  .menuList, li a{
+  .hero--nav--menu-menuList, li a{
     font-size: 32px;
     
   }
-  .menuList li a:hover > .slider {
+  .hero--nav--menu-menuList li a:hover > .hero--nav--menu--menuList-slider {
     width: 100%;
     border: 1px solid white;
   }
@@ -344,7 +344,7 @@ nav{
   top: 50%;
 }
 
-.imgCTT{
+.imgPortfolio{
   max-width: 100%;
   height: auto;
   box-shadow: 0 3px 5px gray;
@@ -544,7 +544,7 @@ nav{
     width: 100%;
     height: 45%;
   }
-  .imgCTT {
+  .imgPortfolio {
     max-width: 95%;
   }
   .division2{
@@ -620,7 +620,7 @@ nav{
     top: 60%;
     
   }
-  .imgCTT{
+  .imgPortfolio{
     max-width: 90%;
   }
   .division2{
@@ -692,7 +692,7 @@ nav{
     text-align: left;
     max-width: 85%;
   }
-  .imgCTT{
+  .imgPortfolio{
     max-width: 95%;
   }
   .division2{
@@ -827,7 +827,7 @@ nav{
     top: 90%;
   }
 }
-@media only screen and (min-width: 1281px) and (max-width: 14000px){
+@media only screen and (min-width: 1281px) and (max-width: 1400px){
   .division1{
     width: 50%;
     
@@ -950,6 +950,9 @@ nav{
     bottom: 22px;
     left: 29%;
   }
+  .slideshow-container div:nth-of-type(1) .imgSlide{
+    bottom: -15px;
+  }
   .textContainer{
     width: 30%;
     text-align: left;
@@ -966,6 +969,9 @@ nav{
   }
   .next{
     right: 45%;
+  }
+  .prev, .next{
+    top: 88%;
   }
 }
 
@@ -1219,7 +1225,7 @@ nav{
     }
     .contacts{
       margin: 10px;
-      margin-left: 5gi0px;
+      margin-left: 50px;
     }
     .icon-contact{
       margin: 10px 5px 10px 0;
