@@ -331,11 +331,11 @@ nav{
   letter-spacing: 5px;
   padding-top: 10px;
 }
-.portfolio--container-right{
+.portfolio--container-left{
   float: left;
 }
 
-.centerDivision1{
+.portfolio--container--left-center{
   max-width: 95%;
   margin: 0 auto;
   text-align: center;
@@ -344,7 +344,7 @@ nav{
   top: 50%;
 }
 
-.imgPortfolio{
+.portfolio--container--left--center--picture-img{
   max-width: 100%;
   height: auto;
   box-shadow: 0 3px 5px gray;
@@ -365,34 +365,34 @@ nav{
   height: auto;
 }
 
-.buttons{
+.portfolio--container--right--center-buttons{
   margin-top: 25px; 
 }
 
-.linkExterno, .popUp{
+.portfolio--container--right--center--buttons-website, .portfolio--container--right--center--buttons-caseStudy{
   font-family: 'LightFont';
   position: relative;
   border-radius: 25px;
   text-decoration: none;
 }
-.linkExterno{
+.portfolio--container--right--center--buttons-website{
   border: 1px solid rgb(197, 187, 224);
   color: rgb(197, 187, 224);
 }
-.popUp{
+.portfolio--container--right--center--buttons-caseStudy{
   border: 1px solid #303044;
   color:#303044
 }
-.portfolio--container-right{
+.portfolio--container-left{
   width: 50%;
   height: 92%;
 }
-.division2{
+.portfolio--container-right{
   float: right;
   width: 50%;
   height: 92%;
 }
-.centerDivision2{
+.portfolio--container--right-center{
   max-width: 95%;
   margin: 0 auto;
   text-align: left;
@@ -400,19 +400,19 @@ nav{
   transform: translateY(-50%);
   top: 50%;
 }
-.title{
+.portfolio--container--right--center-title{
   font-size: 35px;
   margin-bottom: 10px;
   color: white;
   font-family: 'LightItalicFont';
 }
-.subTitle{
+.portfolio--container--right--center-subTitle{
   color: white;
   margin-bottom: 10px;
   font-size: 25px;
   font-family: 'Boldfont';
 }
-.textPortfolio{
+.portfolio--container--right--center-text{
   color: white;
   font-family: 'Lightfont';
   text-align: justify;
@@ -540,14 +540,14 @@ nav{
 }
 /*RESPONSIVE */
 @media only screen and (min-width: 0) and (max-width: 480px){
-  .portfolio--container-right{
+  .portfolio--container-left{
     width: 100%;
     height: 45%;
   }
-  .imgPortfolio {
+  .portfolio--container--left--center--picture-img {
     max-width: 95%;
   }
-  .division2{
+  .portfolio--container-right{
     width: 100%;
     height: 40%;
   }
@@ -555,32 +555,32 @@ nav{
     font-size: 30px;
     padding-top:10px;
   }
-  .centerDivision2{
+  .portfolio--container--right-center{
     max-width: 85%;
   }
   .slideshow-container{
     transform: translateY(0);
   }
-  .title, .title-textContainer{
+  .portfolio--container--right--center-title, .title-textContainer{
     font-size: 16px;
     text-align: left;
   }
   .title-textContainer{
     padding-top: 15px;
   }
-  .subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
     font-size: 20px;
     text-align: left;
   }
-  .textPortfolio{
+  .portfolio--container--right--center-text{
     font-size: 15px;
     margin-top: 0;
     line-height: 1.5;
   }
-  .linkExterno{
+  .portfolio--container--right--center--buttons-website{
     margin-right: 15px;
   }
-  .linkExterno, .popUp{
+  .portfolio--container--right--center--buttons-website, .portfolio--container--right--center--buttons-caseStudy{
     font-size: 15px;
     padding: 10px 25px 10px 25px;
   }
@@ -612,50 +612,50 @@ nav{
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
-  .portfolio--container-right{
+  .portfolio--container-left{
     width: 100%;
     height: 45%;
   }
-  .centerDivision1{
+  .portfolio--container--left-center{
     top: 60%;
     
   }
-  .imgPortfolio{
+  .portfolio--container--left--center--picture-img{
     max-width: 90%;
   }
-  .division2{
+  .portfolio--container-right{
     width: 100%;
     height: 40%;
   }
-  .centerDivision2{
+  .portfolio--container--right-center{
     max-width: 85%;
   }
   .portfolio-title{
     font-size: 35px;
     padding-top:10px;
   }
-  .title, .title-textContainer{
+  .portfolio--container--right--center-title, .title-textContainer{
     font-size: 25px;
     text-align: left;
   }
   .title-textContainer{
     padding-top: 15px;
   }
-  .subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
     font-size: 30px;
     text-align: left;
   }
-  .textPortfolio{
+  .portfolio--container--right--center-text{
     font-size: 18px;
     margin-top: 0;
     line-height: 1.5;
     padding-bottom: 20px;
     text-align: justify;
   }
-  .linkExterno{
+  .portfolio--container--right--center--buttons-website{
     margin-right: 20px;
   }
-  .linkExterno, .popUp{
+  .portfolio--container--right--center--buttons-website, .portfolio--container--right--center--buttons-caseStudy{
     font-size: 20px;
     padding: 10px 35px 10px 35px;
   }
@@ -684,22 +684,22 @@ nav{
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px){
-  .portfolio--container-right{
+  .portfolio--container-left{
     width: 100%;
     height: 45%;
   }
-  .centerDivision1{
+  .portfolio--container--left-center{
     text-align: left;
     max-width: 85%;
   }
-  .imgPortfolio{
+  .portfolio--container--left--center--picture-img{
     max-width: 95%;
   }
-  .division2{
+  .portfolio--container-right{
     width: 100%;
     height: 35%;
   }
-  .centerDivision2{
+  .portfolio--container--right-center{
     max-width: 85%;
   }
   .portfolio-title{
@@ -710,25 +710,25 @@ nav{
   .title-textContainer{
     padding-top: 15px;
   }
-  .title, .title-textContainer{
+  .portfolio--container--right--center-title, .title-textContainer{
     font-size: 30px;
     text-align: left;
   }
-  .subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
     font-size: 35px;
     text-align: left;
   }
-  .textPortfolio{
+  .portfolio--container--right--center-text{
     font-size: 24px;
     margin-top: 10;
     line-height: 1.5;
     text-align: justify;
     padding-bottom: 20px;
   }
-  .linkExterno{
+  .portfolio--container--right--center--buttons-website{
     margin-right: 50px;
   }
-  .linkExterno, .popUp{
+  .portfolio--container--right--center--buttons-website, .portfolio--container--right--center--buttons-caseStudy{
     font-size: 24px;
     padding: 10px 60px 10px 60px;
   }
@@ -764,32 +764,32 @@ nav{
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px){
+  .portfolio--container-left{
+    width: 50%;
+  }
   .portfolio--container-right{
     width: 50%;
   }
-  .division2{
-    width: 50%;
-  }
-  .centerDivision2{
+  .portfolio--container--right-center{
     max-width: 90%;
   }
   .portfolio-title{
     font-size: 40px;
     padding-top: 10px;
   }
-  .title, .title-textContainer{
+  .portfolio--container--right--center-title, .title-textContainer{
     font-size: 25px;
   }
-  .subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
     font-size: 40px;
   }
-  .textPortfolio{
+  .portfolio--container--right--center-text{
     font-size: 21px;
     margin-top: 0;
     line-height: 1.5;
     padding-bottom: 20px;
   }
-  .linkExterno, .popUp{
+  .portfolio--container--right--center--buttons-website, .portfolio--container--right--center--buttons-caseStudy{
     font-size: 21px;
     padding: 10px 45px 10px 45px;
     margin-right: 25px;
@@ -828,40 +828,40 @@ nav{
   }
 }
 @media only screen and (min-width: 1281px) and (max-width: 1400px){
+  .portfolio--container-left{
+    width: 50%;
+    
+  }
   .portfolio--container-right{
     width: 50%;
     
   }
-  .division2{
-    width: 50%;
-    
-  }
-  .centerDivision2{
+  .portfolio--container--right-center{
     max-width: 90%;
   }
   .portfolio-title{
     font-size: 50px;
     padding-top: 10px;
   }
-  .title,.title-textContainer{
+  .portfolio--container--right--center-title,.title-textContainer{
     font-size: 30px;
   }
   
-  .subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
     font-size: 45px;
   }
    
-  .textPortfolio{
+  .portfolio--container--right--center-text{
     font-size: 23px;
     margin-top: 0;
     line-height: 1.5;
     padding-bottom: 30px;
 }
-.linkExterno{
+.portfolio--container--right--center--buttons-website{
   text-align: left;
   margin-right: 40px;
 }
-  .linkExterno, .popUp{
+  .portfolio--container--right--center--buttons-website, .portfolio--container--right--center--buttons-caseStudy{
     font-size: 23px;
     padding: 10px 60px 10px 60px;
     
@@ -901,40 +901,40 @@ nav{
 /*ABOUT*/    
 
 @media only screen and (min-width: 1401px){
+  .portfolio--container-left{
+    width: 50%;
+    
+  }
   .portfolio--container-right{
     width: 50%;
     
   }
-  .division2{
-    width: 50%;
-    
-  }
-  .centerDivision2{
+  .portfolio--container--right-center{
     max-width: 90%;
   }
   .portfolio-title{
     font-size: 50px;
     padding-top: 10px;
   }
-  .title,.title-textContainer{
+  .portfolio--container--right--center-title,.title-textContainer{
     font-size: 30px;
   }
   
-  .subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
     font-size: 45px;
   }
    
-  .textPortfolio{
+  .portfolio--container--right--center-text{
     font-size: 27px;
     margin-top: 0;
     line-height: 1.5;
     padding-bottom: 30px;
 }
-.linkExterno{
+.portfolio--container--right--center--buttons-website{
   text-align: left;
   margin-right: 40px;
 }
-  .linkExterno, .popUp{
+  .portfolio--container--right--center--buttons-website, .portfolio--container--right--center--buttons-caseStudy{
     font-size: 27px;
     padding: 10px 60px 10px 60px;
     
