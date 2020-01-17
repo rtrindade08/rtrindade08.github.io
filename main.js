@@ -75,7 +75,7 @@ var str = "Hello! I'm Renata, a frontend developer from Lisbon. Want to know mor
 
 
 //show Slideshow
-var x = document.getElementsByClassName("slideshow-container");
+var x = document.getElementsByClassName("portfolio--container--right-slideshow");
 
 function showSlideShow(){
     for (var i=0; i < x.length; i+=1){
@@ -95,7 +95,7 @@ function showSlideShow(){
 }
 //hide Slideshow
 function hideSlideShow(){
-    var x =  document.getElementsByClassName("slideshow-container");
+    var x =  document.getElementsByClassName("portfolio--container--right-slideshow");
     for (var i=0; i < x.length; i+=1){
         if(x[i].style.display === "block"){
             x[i].style.display = "none";
@@ -121,7 +121,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("portfolio--container--right--slideshow-slides");
   
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}

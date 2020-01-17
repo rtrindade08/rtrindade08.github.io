@@ -351,11 +351,11 @@ nav{
   border-radius: 15px;
 }
 
-.text-textContainer{
+.portfolio--container--right--slideshow--slides--text--container-paragraph{
   transform: translateY(50%);
 }
 
-.textContainer {
+.portfolio--container--right--slideshow--slides--text-container {
   color: black;
   font-size: 15px;
   padding: 8px 12px;
@@ -420,7 +420,7 @@ nav{
 
 
   /*Slideshow*/
-.imgSlide { 
+.portfolio--container--right--slideshow--slides-img { 
   vertical-align: middle; 
   float: right;
   width:50%;
@@ -430,7 +430,7 @@ nav{
   max-height: 1000px;
 } /*ter em conta responsive */
 
-#overlay, .slideshow-container {
+#overlay, .portfolio--container--right-slideshow {
   position: absolute;
   display: none;
   left: 0;
@@ -446,13 +446,13 @@ nav{
   top: 0;
   bottom: 0;
 }
-.mySlides{
+.portfolio--container--right--slideshow-slides{
   display: none;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 /* Slideshow container */
-.slideshow-container {
+.portfolio--container--right-slideshow {
   transform: translateY(15%);
   position: absolute;
   margin: auto;
@@ -465,7 +465,7 @@ nav{
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.portfolio--container--right--slideshow--icon-prev, .portfolio--container--right--slideshow--icon-next {
   cursor: pointer;
   position: absolute;
   top: 92%;
@@ -479,21 +479,21 @@ nav{
 }
 
 /* Position the "next button" to the right */
-.prev{
+.portfolio--container--right--slideshow--icon-prev{
   left: 47%
 }
-.next {
+.portfolio--container--right--slideshow--icon-next {
   right: 47%;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.portfolio--container--right--slideshow--icon-prev:hover, .portfolio--container--right--slideshow--icon-next:hover {
   fill:#67527B;
 }
 
 /* Caption text */
-.textContainer {
+.portfolio--container--right--slideshow--slides--text-container {
   color: black;
   font-family: 'LightFont';
   font-size: 15px;
@@ -503,21 +503,21 @@ nav{
   text-align: center;
   height: auto;
 }
-.title-textContainer{
+.portfolio--container--right--slideshow--slides--text--container-title{
   font-family: 'LightItalicFont';
   color: rgb(103,82,123,1);
 }
-.subTitle-textContainer{
+.portfolio--container--right--slideshow--slides--text--container-subTitle{
   font-family: 'BoldFont';
   color: rgb(103,82,123,1);
 }
-.icon-close{
+.portfolio--container--right--slideshow--slides--icon-close{
   width: 20px;
   padding: 0 20px 20px 0;
   float: right;
   cursor: pointer;
 }
-.text-textContainer{
+.portfolio--container--right--slideshow--slides--text--container-paragraph{
   font-family: 'LightFont';
   color: rgb(103,82,123,1);
 }
@@ -558,17 +558,17 @@ nav{
   .portfolio--container--right-center{
     max-width: 85%;
   }
-  .slideshow-container{
+  .portfolio--container--right-slideshow{
     transform: translateY(0);
   }
-  .portfolio--container--right--center-title, .title-textContainer{
+  .portfolio--container--right--center-title, .portfolio--container--right--slideshow--slides--text--container-title{
     font-size: 16px;
     text-align: left;
   }
-  .title-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-title{
     padding-top: 15px;
   }
-  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .portfolio--container--right--slideshow--slides--text--container-subTitle{
     font-size: 20px;
     text-align: left;
   }
@@ -584,30 +584,30 @@ nav{
     font-size: 15px;
     padding: 10px 25px 10px 25px;
   }
-  .imgSlide{
+  .portfolio--container--right--slideshow--slides-img{
     width: 100%;
     padding: 0;
     margin-bottom: 15px;
   }
-  .textContainer{
+  .portfolio--container--right--slideshow--slides--text-container{
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
   }
-  .text-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-paragraph{
     transform: translateY(0%);
     font-size: 15px;
     padding-bottom: 20px;
     text-align: justify;
     line-height: 1.5;
   }
-  .prev, .next{
+  .portfolio--container--right--slideshow--icon-prev, .portfolio--container--right--slideshow--icon-next{
     top: 90%;
   }
-  .prev{
+  .portfolio--container--right--slideshow--icon-prev{
     left: 33%;
   }
-  .next{
+  .portfolio--container--right--slideshow--icon-next{
     right: 33%;
   }
 }
@@ -634,14 +634,14 @@ nav{
     font-size: 35px;
     padding-top:10px;
   }
-  .portfolio--container--right--center-title, .title-textContainer{
+  .portfolio--container--right--center-title, .portfolio--container--right--slideshow--slides--text--container-title{
     font-size: 25px;
     text-align: left;
   }
-  .title-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-title{
     padding-top: 15px;
   }
-  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .portfolio--container--right--slideshow--slides--text--container-subTitle{
     font-size: 30px;
     text-align: left;
   }
@@ -659,27 +659,27 @@ nav{
     font-size: 20px;
     padding: 10px 35px 10px 35px;
   }
-  .imgSlide{
+  .portfolio--container--right--slideshow--slides-img{
     width: 100%;
     padding: 0;
     margin-bottom: 15px;
   }
-  .textContainer{
+  .portfolio--container--right--slideshow--slides--text-container{
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
   }
-  .text-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-paragraph{
     transform: translateY(0%);
     font-size: 18px;
     padding-bottom: 30px;
     text-align: justify;
     line-height: 1.5;
   }
-  .prev{
+  .portfolio--container--right--slideshow--icon-prev{
     left: 38%;
   }
-  .next{
+  .portfolio--container--right--slideshow--icon-next{
     right: 38%;
   }
 }
@@ -707,14 +707,14 @@ nav{
     padding-top: 10px;
     margin-bottom: 30px;
   }
-  .title-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-title{
     padding-top: 15px;
   }
-  .portfolio--container--right--center-title, .title-textContainer{
+  .portfolio--container--right--center-title, .portfolio--container--right--slideshow--slides--text--container-title{
     font-size: 30px;
     text-align: left;
   }
-  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .portfolio--container--right--slideshow--slides--text--container-subTitle{
     font-size: 35px;
     text-align: left;
   }
@@ -732,20 +732,20 @@ nav{
     font-size: 24px;
     padding: 10px 60px 10px 60px;
   }
-  .imgSlide{
+  .portfolio--container--right--slideshow--slides-img{
     width: 100%;
     padding: 0;
     
   }
-  .textContainer{
+  .portfolio--container--right--slideshow--slides--text-container{
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
   }
-  .slideshow-container{
+  .portfolio--container--right-slideshow{
     transform: translateY(0%);
   }
-  .text-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-paragraph{
     transform: translateY(0%);
     font-size: 20px;
     padding-bottom: 30px;
@@ -753,13 +753,13 @@ nav{
     line-height: 1.5;
 
   }
-  .prev, .next{
+  .portfolio--container--right--slideshow--icon-prev, .portfolio--container--right--slideshow--icon-next{
     padding-top: 20px;
   }
-  .prev{
+  .portfolio--container--right--slideshow--icon-prev{
     left: 42%;
   }
-  .next{
+  .portfolio--container--right--slideshow--icon-next{
     right: 42%;
   }
 }
@@ -777,10 +777,10 @@ nav{
     font-size: 40px;
     padding-top: 10px;
   }
-  .portfolio--container--right--center-title, .title-textContainer{
+  .portfolio--container--right--center-title, .portfolio--container--right--slideshow--slides--text--container-title{
     font-size: 25px;
   }
-  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .portfolio--container--right--slideshow--slides--text--container-subTitle{
     font-size: 40px;
   }
   .portfolio--container--right--center-text{
@@ -794,36 +794,36 @@ nav{
     padding: 10px 45px 10px 45px;
     margin-right: 25px;
   }
-  .slideshow-container{
+  .portfolio--container--right-slideshow{
     height: 65%;
     width: 90%;
   }
-  .imgSlide{
+  .portfolio--container--right--slideshow--slides-img{
     padding: 0;
     width: 71%;
     position: fixed;
     bottom: 7px;
     left: 28%;
   }
-  .textContainer{
+  .portfolio--container--right--slideshow--slides--text-container{
     width: 30%;
     text-align: left;
     margin-left: 15px;
   }
-  .text-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-paragraph{
     transform: translateY(0%);
     font-size: 20px;
     line-height: 1.5;
 
   }
-  .prev{
+  .portfolio--container--right--slideshow--icon-prev{
     left: 43%;
    
   }
-  .next{
+  .portfolio--container--right--slideshow--icon-next{
     right: 43%;
   }
-  .prev, .next{
+  .portfolio--container--right--slideshow--icon-prev, .portfolio--container--right--slideshow--icon-next{
     top: 90%;
   }
 }
@@ -843,11 +843,11 @@ nav{
     font-size: 50px;
     padding-top: 10px;
   }
-  .portfolio--container--right--center-title,.title-textContainer{
+  .portfolio--container--right--center-title,.portfolio--container--right--slideshow--slides--text--container-title{
     font-size: 30px;
   }
   
-  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .portfolio--container--right--slideshow--slides--text--container-subTitle{
     font-size: 45px;
   }
    
@@ -866,35 +866,35 @@ nav{
     padding: 10px 60px 10px 60px;
     
   }
-  .slideshow-container{
+  .portfolio--container--right-slideshow{
     height: 70%;
     width: 85%;
   }
-  .imgSlide{
+  .portfolio--container--right--slideshow--slides-img{
     padding: 0;
     width: 69%;
     position: fixed;
     bottom: 20px;
     left: 30%;
   }
-  .textContainer{
+  .portfolio--container--right--slideshow--slides--text-container{
     width: 29%;
     text-align: left;
     margin-left: 20px;
     
   }
-  .text-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-paragraph{
     transform: translateY(0%);
     font-size: 22px;
     line-height: 1.5;
   }
-  .prev{
+  .portfolio--container--right--slideshow--icon-prev{
     left: 45%;
   }
-  .next{
+  .portfolio--container--right--slideshow--icon-next{
     right: 45%;
   }
-  .prev, .next{
+  .portfolio--container--right--slideshow--icon-prev, .portfolio--container--right--slideshow--icon-next{
     top: 90%;
   }
 }
@@ -916,11 +916,11 @@ nav{
     font-size: 50px;
     padding-top: 10px;
   }
-  .portfolio--container--right--center-title,.title-textContainer{
+  .portfolio--container--right--center-title,.portfolio--container--right--slideshow--slides--text--container-title{
     font-size: 30px;
   }
   
-  .portfolio--container--right--center-subTitle, .subTitle-textContainer{
+  .portfolio--container--right--center-subTitle, .portfolio--container--right--slideshow--slides--text--container-subTitle{
     font-size: 45px;
   }
    
@@ -939,38 +939,38 @@ nav{
     padding: 10px 60px 10px 60px;
     
   }
-  .slideshow-container{
+  .portfolio--container--right-slideshow{
     height: 71%;
     width: 80%;
   }
-  .imgSlide{
+  .portfolio--container--right--slideshow--slides-img{
     padding: 0;
     width: 71%;
     position: fixed;
     bottom: 22px;
     left: 29%;
   }
-  .slideshow-container div:nth-of-type(1) .imgSlide{
+  .portfolio--container--right-slideshow div:nth-of-type(1) .portfolio--container--right--slideshow--slides-img{
     bottom: -15px;
   }
-  .textContainer{
+  .portfolio--container--right--slideshow--slides--text-container{
     width: 30%;
     text-align: left;
     margin-left: 20px;
     
   }
-  .text-textContainer{
+  .portfolio--container--right--slideshow--slides--text--container-paragraph{
     transform: translateY(0%);
     font-size: 24px;
     line-height: 1.5;
   }
-  .prev{
+  .portfolio--container--right--slideshow--icon-prev{
     left: 45%;
   }
-  .next{
+  .portfolio--container--right--slideshow--icon-next{
     right: 45%;
   }
-  .prev, .next{
+  .portfolio--container--right--slideshow--icon-prev, .portfolio--container--right--slideshow--icon-next{
     top: 88%;
   }
 }
@@ -983,13 +983,13 @@ nav{
   height: auto;
 }
 
-.aboutCenter{
+.about-center{
   max-width: 95%;
   margin: 0 auto;
   text-align: center;
   position: relative;
 }
-  .aboutTitle{
+  .about-title{
     font-family: 'SemiBoldFont';
     margin: 0 auto;
     text-align: center;
@@ -1001,26 +1001,26 @@ nav{
     width: max-content;
 
   }
-  .aboutSubtitle{
+  .about--center-subtitle{
     font-family: 'SemiBoldFont';
     font-size: 32px;
     color: white;
   }
-  .aboutText{
+  .about--center-text{
     color: white;
     font-family: 'LightFont';
     font-size: 32px;
     line-height: 1.5;
     text-align: justify;
   }
-  .specialSkills{
+  .about--center-specialSkills{
     font-family: 'LightItalicFont';
     font-style: italic;
     font-size: 32px;
     color: white;
   }
   
-  .icons{
+  .about--center--iconsGroup-icons{
     width: 140px;
     border-radius: 10px;
     text-align: center;
@@ -1028,126 +1028,126 @@ nav{
   }
 
   @media only screen and (min-width:0px) and (max-width:480px){
-    .aboutTitle{
+    .about-title{
       font-size: 30px;
     }
-    .aboutCenter{
+    .about-center{
       max-width: 85%;
     }
-    .aboutSubtitle{
+    .about--center-subtitle{
       font-size:20px;
     }
-    .aboutText{
+    .about--center-text{
       font-size:16px;
     }
-    .specialSkills{
+    .about--center-specialSkills{
       font-size:20px;
       }
-    .iconsGroup{
+    .about--center-iconsGroup{
       padding-bottom: 15px;
     }
-    .icons{
+    .about--center--iconsGroup-icons{
       width: 45px;
       margin: 8px;
     }
   }
   @media only screen and (min-width:481px) and (max-width:768px){
-    .aboutTitle{
+    .about-title{
       font-size: 50px;
     }
-    .aboutCenter{
+    .about-center{
       max-width: 85%;
     }
-    .aboutSubtitle{
+    .about--center-subtitle{
       font-size:40px;
     }
-    .aboutText{
+    .about--center-text{
       font-size:22px;
     }
-    .specialSkills{
+    .about--center-specialSkills{
       font-size:40px;
     }
-    .iconsGroup{
+    .about--center-iconsGroup{
       padding-bottom: 20px;
     }
-    .icons{
+    .about--center--iconsGroup-icons{
       width: 65px;
       margin: 10px;
     }
   }
   
   @media only screen and (min-width:769px) and (max-width:1024px){
-    .aboutTitle{
+    .about-title{
       font-size: 50px;
     }
-    .aboutCenter{
+    .about-center{
       max-width: 85%;
     }
-    .aboutSubtitle{
+    .about--center-subtitle{
       font-size:35px;
     }
-    .aboutText{
+    .about--center-text{
       font-size:27px;
     }
-    .specialSkills{
+    .about--center-specialSkills{
       font-size:35px;
     }
-    .iconsGroup{
+    .about--center-iconsGroup{
       padding-bottom: 20px;
     }
-    .icons{
+    .about--center--iconsGroup-icons{
       width: 80px;
       margin: 15px;
     }
   }
   @media only screen and (min-width:1025px) and (max-width:1280px){
-    .aboutTitle{
+    .about-title{
       font-size: 40px;
     }
-    .aboutCenter{
+    .about-center{
       max-width: 85%;
     }
-    .aboutSubtitle{
+    .about--center-subtitle{
       font-size:35px;
     }
-    .aboutText{
+    .about--center-text{
       font-size:28px;
       max-width: 90%;
       margin: 0 auto;
     }
-    .specialSkills{
+    .about--center-specialSkills{
       font-size:40px;
     }
-    .iconsGroup{
+    .about--center-iconsGroup{
       padding-bottom: 20px;
     }
-    .icons{
+    .about--center--iconsGroup-icons{
       width: 100px;
       margin: 15px;
     }
   }
   @media only screen and (min-width: 1281px){
-    .aboutTitle{
+    .about-title{
       font-size: 50px;
       margin-bottom: 25px;
     }
-    .aboutSubtitle{
+    .about--center-subtitle{
       font-size: 40px;
       max-width: 80%;
       margin: 0 auto;
     }
-    .aboutText{
+    .about--center-text{
       font-size:28px;
       max-width: 80%;
       margin: 0 auto;
     }
-    .specialSkills{
+    .about--center-specialSkills{
       font-size:40px;
     }
-    .iconsGroup{
+    .about--center-iconsGroup{
       padding-bottom: 20px;
     }
-    .icons{
+    .about--center--iconsGroup-icons{
       width: 100px;
       margin: 20px;
     }
@@ -1162,7 +1162,7 @@ nav{
     justify-content: center;
     height: 40%;
   }
-  .letsWork{
+  .footer-container-left-letsWork{
     color: rgba(225,214,255,1);
     font-size: 50px;
     font-family: 'BoldFont';
@@ -1171,10 +1171,10 @@ nav{
     border-bottom: 1px solid rgba(225,214,255,1);
     width: max-content;
   }
-  .icon-contact{
+  .footer-container--right--contacts-icon{
     vertical-align: middle;
   }
-  .email,.phone{
+  .footer-container--right--contacts-email,.footer-container--right--contacts-phone{
     display: inline-block;
     vertical-align: middle;
     font-size: 40px;
@@ -1192,18 +1192,18 @@ nav{
       padding-top: 25px;
       margin-left: 25px;
     }
-    .letsWork{
+    .footer-container-left-letsWork{
       font-size: 35px;
     }
-    .contacts{
+    .footer-container--right-contacts{
       margin: 10px;
       margin-left: 20px;
     }
-    .icon-contact{
+    .footer-container--right--contacts-icon{
       margin: 5px;
       width: 12px;
     }
-    .email,.phone{
+    .footer-container--right--contacts-email,.footer-container--right--contacts-phone{
       font-size: 18px;
       margin: 0px;
     }
@@ -1220,18 +1220,18 @@ nav{
       padding-top: 35px;
       margin-left: 50px;
     }
-    .letsWork{
+    .footer-container-left-letsWork{
       font-size: 45px;
     }
-    .contacts{
+    .footer-container--right-contacts{
       margin: 10px;
       margin-left: 50px;
     }
-    .icon-contact{
+    .footer-container--right--contacts-icon{
       margin: 10px 5px 10px 0;
       width: 15px;
     }
-    .email,.phone{
+    .footer-container--right--contacts-email,.footer-container--right--contacts-phone{
       font-size: 25px;
       margin: 0px;
     }
@@ -1245,19 +1245,19 @@ nav{
         width: 334px;
         padding: 100px 0px 100px 10px;
       }
-      .letsWork{
+      .footer-container-left-letsWork{
         font-size: 45px;
         /*margin-top: -10px; EXPERIMENTAR PARA ALINHAR*/
       }
-      .contacts{
+      .footer-container--right-contacts{
         margin: 0px 0px 10px 10px;
         
       }
-      .icon-contact{
+      .footer-container--right--contacts-icon{
         margin: 5px;
         width: 20px;
       }
-      .email, .phone{
+      .footer-container--right--contacts-email, .footer-container--right--contacts-phone{
         font-size: 25px;
         margin: 0px;
       }
@@ -1271,17 +1271,17 @@ nav{
         width: 368px;
         padding: 130px 0px 130px 10px;
       }
-      .letsWork{
+      .footer-container-left-letsWork{
         font-size: 55px;
       }
-      .contacts{
+      .footer-container--right-contacts{
         margin: 0px 0px 10px 45px;
       }
-      .icon-contact{
+      .footer-container--right--contacts-icon{
         margin: 10px;
         width: 30px;
       }
-      .email, .phone{
+      .footer-container--right--contacts-email, .footer-container--right--contacts-phone{
         font-size: 30px;
         margin: 0px;
       }
@@ -1295,17 +1295,17 @@ nav{
         width: 435px;
         padding: 160px 0px 160px 10px;
       }
-      .letsWork{
+      .footer-container-left-letsWork{
         font-size: 65px;
       }
-      .contacts{
+      .footer-container--right-contacts{
         margin: 0px 0px 10px 60px;
       }
-      .icon-contact{
+      .footer-container--right--contacts-icon{
         margin: 10px;
         width: 35px;
       }
-      .email, .phone{
+      .footer-container--right--contacts-email, .footer-container--right--contacts-phone{
         font-size: 35px;
         margin: 0px;
       }
