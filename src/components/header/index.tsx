@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand href="/">renata</NavbarBrand>
         <NavbarToggler />
         <Collapse navbar>
           <Nav className="me-auto" navbar>
