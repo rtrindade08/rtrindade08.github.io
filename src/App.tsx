@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
 import { Home } from "./screens/home";
+import "./scss/main.scss";
 const App: React.FC = () => {
   return (
     <div className="App">
