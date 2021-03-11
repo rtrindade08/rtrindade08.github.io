@@ -1,33 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import {
-  Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
   NavbarText,
+  Fade,
 } from "reactstrap";
+import "./styles.scss";
 export const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
       <Navbar light expand="md">
-        <NavbarBrand href="/">renata</NavbarBrand>
-        <NavbarToggler />
-        <Collapse navbar>
-          <Nav className="me-auto" navbar>
+        <NavbarText className={`${isOpen && "navBarTextMobile"}`} href="/">
+          renata
+        </NavbarText>
+        <NavbarToggler onClick={toggle} className="ml-auto" />
+        <Fade in={isOpen} className="mt-3" navbar>
+          <Nav className={`ml-auto ${isOpen && "mx-auto"}`} navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/components/">PORTFOLIO</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
+                ABOUT ME
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">
+                CONTACT
               </NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
+        </Fade>
       </Navbar>
     </div>
   );
