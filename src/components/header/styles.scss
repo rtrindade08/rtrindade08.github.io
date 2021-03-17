@@ -1,7 +1,16 @@
+@import "../../design-system/typography";
+
 .navMobile {
   text-align: center;
   z-index: 2;
 }
 .navBarTextMobile {
   display: none;
+}
+
+.nav-item {
+  a{
+      color: white;
+      font-family: "LightFont", sans-serif;
+  }
 }

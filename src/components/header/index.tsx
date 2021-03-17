@@ -7,21 +7,24 @@ import {
   NavLink,
   NavbarText,
   Fade,
+  Collapse,
 } from "reactstrap";
 import "./styles.scss";
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
+
   return (
     <div>
-      <Navbar light expand="md">
+      <Navbar expand="md">
         <NavbarText className={`${isOpen && "navBarTextMobile"}`} href="/">
-          renata
+          RENATA TRINDADE
         </NavbarText>
+
         <NavbarToggler onClick={toggle} className="ml-auto" />
-        <Fade in={isOpen} className="mt-3" navbar>
-          <Nav className={`ml-auto ${isOpen && "mx-auto"}`} navbar>
+        <Collapse isOpen={isOpen} /* className="mt-3" */ navbar>
+          {" "}
+          <Nav className={`ml-auto ${isOpen && "navMobile"}`} navbar>
             <NavItem>
               <NavLink href="/components/">PORTFOLIO</NavLink>
             </NavItem>
@@ -36,7 +39,7 @@ export const Header: React.FC = () => {
               </NavLink>
             </NavItem>
           </Nav>
-        </Fade>
+        </Collapse>
       </Navbar>
     </div>
   );
